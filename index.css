@@ -82,7 +82,7 @@
 }
 
 .home-hero {
-  height: 550px;
+  height: 500px;
   color: white;
   background-image: url('./public/homehero.png');
   background-size: cover;
@@ -306,8 +306,14 @@
 }
 
 .insthero {
-  height: 550px;
+  height: 450px;
   background-image: url('./public/inshero.png');
+  background-size: cover;
+}
+
+.onlinehero {
+  height: 450px;
+  background-image: url('./public/onlineform.png');
   background-size: cover;
 }
 
