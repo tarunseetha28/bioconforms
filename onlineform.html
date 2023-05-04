@@ -98,6 +98,38 @@
                             <p>Status: New</p>
                             <p>Unique Id: UID77126050403202313</p>
                         </div>
+                        <div class="nftab-container">
+                            <div class="nftab">
+                                <p class="nftablinks active" onclick="nfopenTab(event, 'reporter')">Reporter’s
+                                    Information
+                                </p>
+                                <p class="nftablinks" onclick="nfopenTab(event, 'patient')">Patient’s Information
+                                </p>
+                                <p class="nftablinks" onclick="nfopenTab(event, 'suspect')">Suspect Product Information
+                                </p>
+                                <p class="nftablinks" onclick="nfopenTab(event, 'event')">Event Information</p>
+                            </div>
+
+                            <div id="reporter" class="nftabcontent">
+                                <h2>reporter gorm</h2>
+                                <!-- reporter form code here -->
+                            </div>
+
+                            <div id="patient" class="nftabcontent">
+                                <h2>patient form</h2>
+                                <!-- Sign up form code here -->
+                            </div>
+
+                            <div id="suspect" class="nftabcontent">
+                                <h2>suspect form</h2>
+                                <!-- News form code here -->
+                            </div>
+
+                            <div id="event" class="nftabcontent">
+                                <h2>event form</h2>
+                                <!-- Updates code here -->
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -132,10 +164,6 @@
         </div>
 
     </div>
-
-
-
-
 
 
     <div class="footer-wrapper">
@@ -216,6 +244,26 @@
                 link.classList.add('active');
             }
         });
+    </script>
+    <script>
+        document.getElementById("reporter").style.display = "block";
+
+        function nfopenTab(nfevt, nftabName) {
+
+            var k, nftabcontent, nftablinks;
+
+            nftabcontent = document.getElementsByClassName("nftabcontent");
+            for (k = 0; k < nftabcontent.length; k++) {
+                nftabcontent[k].style.display = "none";
+            }
+            nftablinks = document.getElementsByClassName("nftablinks");
+            for (k = 0; k < nftablinks.length; k++) {
+                nftablinks[k].className = nftablinks[k].className.replace(" active", "");
+            }
+
+            document.getElementById(nftabName).style.display = "block";
+            nfevt.currentTarget.className += " active";
+        }
     </script>
 
 </body>

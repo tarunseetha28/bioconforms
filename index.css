@@ -468,3 +468,53 @@
   justify-content: space-between;
   color: #043E76;
 }
+
+.newform {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+
+.nftab-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Style the tabs */
+.nftab {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
+
+/* Style the tab content */
+.nftabcontent {
+  flex: 1;
+  display: none;
+  padding: 1rem;
+}
+
+.nftabcontent h2 {
+  margin-top: 0;
+}
+
+.nftablinks {
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 80px 20px 0px;
+  font-size: 1rem;
+  text-align: left;
+  border-right: 3px solid #EFEFEF;
+}
+
+.nftab button:hover {}
+
+.nftablinks.active {
+  color: #5993CC;
+  background-color: #ffffff;
+  border-right: 3px solid #5993CC;
+}

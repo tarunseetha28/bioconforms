@@ -440,4 +440,48 @@
   display: flex;
 }
 
+.newform {
+  flex-direction: column;
+  row-gap: 40px;
+  display: flex;
+}
+
+.nftab-container {
+  flex-direction: row;
+  display: flex;
+}
+
+.nftab {
+  flex-direction: column;
+  margin-right: 2rem;
+  display: flex;
+}
+
+.nftabcontent {
+  flex: 1;
+  padding: 1rem;
+  display: none;
+}
+
+.nftabcontent h2 {
+  margin-top: 0;
+}
+
+.nftablinks {
+  cursor: pointer;
+  text-align: left;
+  background-color: #fff;
+  border: none;
+  border-right: 3px solid #efefef;
+  outline: none;
+  padding: 20px 80px 20px 0;
+  font-size: 1rem;
+}
+
+.nftablinks.active {
+  color: #5993cc;
+  background-color: #fff;
+  border-right: 3px solid #5993cc;
+}
+
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

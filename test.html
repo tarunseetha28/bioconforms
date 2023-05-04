@@ -5,91 +5,97 @@
     <meta charset="UTF-8">
     <title>Tab Example</title>
     <style>
-        .tab-container {
+        .nftab-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
 
         /* Style the tabs */
-        .tab {
+        .nftab {
             display: flex;
-            margin-bottom: 1rem;
+            flex-direction: column;
+            margin-right: 2rem;
         }
 
-        .tab button {
-
-            background-color: #ddd;
+        .nftab button {
+            background-color: #ffffff;
             border: none;
             outline: none;
             cursor: pointer;
-            padding: 0.5rem 1rem;
-            margin-right: 0.5rem;
+            padding: 20px 40px;
             font-size: 1rem;
+            text-align: left;
+            border-right: 4px solid rgba(128, 128, 128, 0.192);
         }
 
-        .tab button:hover {
-            background-color: #bbb;
-        }
+        .nftab button:hover {}
 
-        .tab button.active {
-            background-color: #bbb;
+        .nftab button.active {
+            background-color: #ffffff;
+            border-right: 4px solid black;
         }
 
         /* Style the tab content */
-        .tabcontent {
+        .nftabcontent {
+            flex: 1;
             display: none;
             padding: 1rem;
         }
 
-        .tabcontent h2 {
+        .nftabcontent h2 {
             margin-top: 0;
         }
     </style>
 </head>
 
 <body>
-    <div class="tab-container">
-        <div class="tab">
-            <button class="tablinks active" onclick="openTab(event, 'login')">Login</button>
-            <button class="tablinks" onclick="openTab(event, 'signup')">Sign Up</button>
+    <div class="nftab-container">
+        <div class="nftab">
+            <button class="nftablinks active" onclick="nfopenTab(event, 'reporter')">reporter</button>
+            <button class="nftablinks" onclick="nfopenTab(event, 'patient')">patient</button>
+            <button class="nftablinks" onclick="nfopenTab(event, 'suspect')">suspect</button>
+            <button class="nftablinks" onclick="nfopenTab(event, 'event')">event</button>
         </div>
 
-        <div id="login" class="tabcontent">
-            <h2>Login Form</h2>
-            <!-- Login form code here -->
+        <div id="reporter" class="nftabcontent">
+            <h2>reporter Form</h2>
+            <!-- reporter form code here -->
         </div>
 
-        <div id="signup" class="tabcontent">
+        <div id="patient" class="nftabcontent">
             <h2>Sign Up Form</h2>
             <!-- Sign up form code here -->
         </div>
+
+        <div id="suspect" class="nftabcontent">
+            <h2>News</h2>
+            <!-- News form code here -->
+        </div>
+
+        <div id="event" class="nftabcontent">
+            <h2>Updates</h2>
+            <!-- Updates code here -->
+        </div>
     </div>
     <script>
-        // Open the default tab on page load
-        document.getElementById("login").style.display = "block";
+        document.getElementById("reporter").style.display = "block";
 
-        // Function to switch between tabs
-        function openTab(evt, tabName) {
+        function nfopenTab(nfevt, nftabName) {
 
-            var i, tabcontent, tablinks;
+            var k, nftabcontent, nftablinks;
 
-            // Hide all tab content
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+            nftabcontent = document.getElementsByClassName("nftabcontent");
+            for (k = 0; k < nftabcontent.length; k++) {
+                nftabcontent[k].style.display = "none";
+            }
+            nftablinks = document.getElementsByClassName("nftablinks");
+            for (k = 0; k < nftablinks.length; k++) {
+                nftablinks[k].className = nftablinks[k].className.replace(" active", "");
             }
 
-            // Remove the "active" class from all tab links
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the selected tab content and mark the button as active
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
+            document.getElementById(nftabName).style.display = "block";
+            nfevt.currentTarget.className += " active";
         }
-
     </script>
 </body>
 
