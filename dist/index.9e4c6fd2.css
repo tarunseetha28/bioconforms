@@ -346,4 +346,73 @@
   display: none;
 }
 
+.body-onlineform {
+  background-color: #f9f9f9;
+}
+
+.tab-container {
+  flex-direction: column;
+  display: flex;
+}
+
+.tabtitles {
+  column-gap: 10px;
+  display: flex;
+}
+
+.tab {
+  justify-content: space-between;
+  display: flex;
+}
+
+.tab button {
+  cursor: pointer;
+  color: #003e76;
+  text-transform: capitalize;
+  background-color: #efefef;
+  border: 0;
+  border-top: 4px solid #efefef;
+  outline: none;
+  padding: 20px 50px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.tab button:hover {
+  color: #003e76;
+  background-color: #efefef;
+  border-top: 4px solid #efefef;
+  padding: 20px 50px;
+}
+
+.tab button.active {
+  color: #003e76;
+  background-color: #fff;
+  border-top: 4px solid #5993cc;
+  padding: 20px 50px;
+}
+
+.tabcontent {
+  background-color: #fff;
+  margin-bottom: 50px;
+  padding: 50px;
+  display: none;
+}
+
+.tabcontent h2 {
+  margin-top: 0;
+}
+
+.newform-note {
+  color: #5993cc;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.tabdetails {
+  align-items: center;
+  column-gap: 20px;
+  display: flex;
+}
+
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

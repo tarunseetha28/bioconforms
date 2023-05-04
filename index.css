@@ -367,3 +367,78 @@
 .arrowminus {
   display: none;
 }
+
+.body-onlineform {
+  background-color: #F9F9F9;
+}
+
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabtitles {
+  display: flex;
+  column-gap: 10px;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab button {
+  cursor: pointer;
+  padding: 20px 50px;
+  border-top: 4px solid #EFEFEF;
+  color: #003E76;
+  background-color: #EFEFEF;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 4px solid #EFEFEF;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.tab button:hover {
+  padding: 20px 50px;
+  border-top: 4px solid #EFEFEF;
+  color: #003E76;
+  background-color: #EFEFEF;
+}
+
+.tab button.active {
+  padding: 20px 50px;
+  border-top: 4px solid #5993CC;
+  color: #003E76;
+  background-color: white;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+  background-color: white;
+  display: none;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+.tabcontent h2 {
+  margin-top: 0;
+}
+
+.newform-note {
+  color: #5993CC;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.tabdetails {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
