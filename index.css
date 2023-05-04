@@ -376,6 +376,7 @@
 .tab-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .tabtitles {
@@ -424,8 +425,14 @@
   background-color: white;
   display: none;
   padding: 50px;
-  margin-bottom: 50px;
 }
+
+.exform-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
 
 .tabcontent h2 {
   margin-top: 0;
@@ -441,4 +448,23 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
+}
+
+.existing-form {
+  display: flex;
+  row-gap: 10px;
+  width: 350px;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.formbtn {
+  width: 100%;
+}
+
+.tabdetails-nf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #043E76;
 }

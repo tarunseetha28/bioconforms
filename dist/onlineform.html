@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <title>Online Form</title>
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <link rel="stylesheet" href="/index.689f5f05.css">
     <link rel="stylesheet" href="/index.9e4c6fd2.css">
@@ -61,32 +62,39 @@
                         <button class="tablinks" onclick="openTab(event, 'existingform')">Existing Form</button>
                     </div>
                     <div class="tabdetails">
-                        <p>FAQ</p>
+                        <a href="/instructions.html">FAQ</a>
                         <p>Session Idle: 16035 seconds</p>
                     </div>
                 </div>
 
 
                 <div id="existingform" class="tabcontent">
-                    <p>Please enter the Unique Id *</p>
-                    <form>
-                        <input type="text" id="uid" name="uid" placeholder="UID01623580406200911" required="">
-                        <br>
-                        <button type="button" id="generate-otp">Generate OTP</button>
-                        <br>
-                        <label for="otp">OTP:</label>
-                        <input type="text" id="otp" name="otp" required="">
-                        <br>
-                        <button type="submit" id="load-form">Load Online Form</button>
-                    </form>
-                    <span class="newform-note">Note : If you already have unique ID (for ex., UID01623580406200911), use
-                        this option of existing
-                        form.<br> You can retrieve your unique ID from your e-mail address.</span>
+                    <div class="exform-body">
+                        <form class="existing-form">
+                            <label for="uid"> Please enter the Unique Id *</label>
+                            <input type="text" id="uid" name="uid" placeholder="for ex., UID01623580406200911" required="">
+
+                            <button class="formbtn" type="button" id="generate-otp">Generate OTP</button>
+
+                            <label for="otp">OTP:</label>
+                            <input type="text" id="otp" name="otp" placeholder="For ex., rOU7xC" required="">
+
+                            <button class="formbtn" type="submit" id="load-form">Load Online
+                                Form</button>
+                        </form>
+                        <span class="newform-note">Note : If you already have unique ID (for ex., UID01623580406200911),
+                            use
+                            this option of existing
+                            form.<br> You can retrieve your unique ID from your e-mail address.</span>
+                    </div>
                 </div>
 
                 <div id="newform" class="tabcontent">
-                    <div class="online-ef">
-                        <h2>New form</h2>
+                    <div class="newform">
+                        <div class="tabdetails-nf">
+                            <p>Status: New</p>
+                            <p>Unique Id: UID77126050403202313</p>
+                        </div>
                     </div>
                 </div>
 

@@ -352,6 +352,7 @@
 
 .tab-container {
   flex-direction: column;
+  margin-bottom: 50px;
   display: flex;
 }
 
@@ -394,9 +395,14 @@
 
 .tabcontent {
   background-color: #fff;
-  margin-bottom: 50px;
   padding: 50px;
   display: none;
+}
+
+.exform-body {
+  flex-direction: column;
+  row-gap: 50px;
+  display: flex;
 }
 
 .tabcontent h2 {
@@ -412,6 +418,25 @@
 .tabdetails {
   align-items: center;
   column-gap: 20px;
+  display: flex;
+}
+
+.existing-form {
+  width: 350px;
+  border-radius: 5px;
+  flex-direction: column;
+  row-gap: 10px;
+  display: flex;
+}
+
+.formbtn {
+  width: 100%;
+}
+
+.tabdetails-nf {
+  color: #043e76;
+  justify-content: space-between;
+  align-items: center;
   display: flex;
 }
 
