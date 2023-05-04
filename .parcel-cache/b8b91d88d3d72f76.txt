@@ -1,4 +1,9 @@
-4485
+4486
+108C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\node-resolver-core\test\fixture\packages\source\dist.js121436361000000000 0
+61C:\Users\tarun\Downloads\Biocon\node_modules\svgo\lib\svgo.js121436361000000000 0
+61C:\Users\tarun\Downloads\Biocon\node_modules\anymatch\LICENSE121436361000000000 0
+53C:\Users\tarun\Downloads\Biocon\node_modules\mdn-data133275266371975264 1
+42C:\Users\tarun\Downloads\Biocon\.gitignore133276717835016956 0
 73C:\Users\tarun\Downloads\Biocon\node_modules\css-select\lib\sort.d.ts.map121436361000000000 0
 73C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\optimizer-terser\src133275266300436779 1
 76C:\Users\tarun\Downloads\Biocon\node_modules\source-map-js\lib\quick-sort.js121436361000000000 0
@@ -37,6 +42,12 @@
 70C:\Users\tarun\Downloads\Biocon\node_modules\msgpackr\rollup.config.js121436361000000000 0
 116C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\workers\test\integration\workerfarm\resolve-shared-reference.js121436361000000000 0
 41C:\Users\tarun\Downloads\Biocon\index.css133276696269778216 0
+44C:\Users\tarun\Downloads\Biocon\node_modules133275755576866363 1
+67C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\README.md121436361000000000 0
+73C:\Users\tarun\Downloads\Biocon\node_modules\sass\types\logger\index.d.ts121436361000000000 0
+61C:\Users\tarun\Downloads\Biocon\node_modules\stable\README.md131691406740000000 0
+49C:\Users\tarun\Downloads\Biocon\instructions.html133276698777454568 0
+78C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\core\test\fixtures\config133275266305496794 1
 59C:\Users\tarun\Downloads\Biocon\public\mask-group-18@2x.png133275067500000000 0
 77C:\Users\tarun\Downloads\Biocon\node_modules\term-size\vendor\macos\.DS_Store121436361000000000 0
 70C:\Users\tarun\Downloads\Biocon\node_modules\is-arrayish\.istanbul.yml130849956100000000 0
@@ -45,12 +56,6 @@
 97C:\Users\tarun\Downloads\Biocon\node_modules\dom-serializer\node_modules\entities\lib\decode.d.ts121436361000000000 0
 49C:\Users\tarun\Downloads\Biocon\package-lock.json133275315246266990 0
 86C:\Users\tarun\Downloads\Biocon\node_modules\@swc\helpers\src\_array_like_to_array.mjs132996204500000000 0
-44C:\Users\tarun\Downloads\Biocon\node_modules133275755576866363 1
-67C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\README.md121436361000000000 0
-73C:\Users\tarun\Downloads\Biocon\node_modules\sass\types\logger\index.d.ts121436361000000000 0
-61C:\Users\tarun\Downloads\Biocon\node_modules\stable\README.md131691406740000000 0
-49C:\Users\tarun\Downloads\Biocon\instructions.html133276698777454568 0
-78C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\core\test\fixtures\config133275266305496794 1
 44C:\Users\tarun\Downloads\Biocon\package.json133275315244537078 0
 108C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\core\test\fixtures\invalid-source-not-file\package.json121436361000000000 0
 84C:\Users\tarun\Downloads\Biocon\node_modules\css-tree\lib\definition-syntax\parse.js121436361000000000 0
@@ -215,12 +220,6 @@
 86C:\Users\tarun\Downloads\Biocon\node_modules\cosmiconfig\dist\getPropertyByPath.js.map121436361000000000 0
 50C:\Users\tarun\Downloads\Biocon\public\printer.svg133275067500000000 0
 61C:\Users\tarun\Downloads\Biocon\node_modules\tslib\tslib.d.ts121436361000000000 0
-76C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\data\regions\CF.js121436361000000000 0
-62C:\Users\tarun\Downloads\Biocon\node_modules\lmdb\src\misc.cpp121436361000000000 0
-94C:\Users\tarun\Downloads\Biocon\node_modules\@babel\helper-validator-identifier\lib\keyword.js121012626000000000 0
-94C:\Users\tarun\Downloads\Biocon\node_modules\htmlnano\lib\modules\removeRedundantAttributes.js121436361000000000 0
-108C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\transformer-html\node_modules\posthtml-parser\readme.md121436361000000000 0
-54C:\Users\tarun\Downloads\Biocon\node_modules\commander133275266357156776 1
 74C:\Users\tarun\Downloads\Biocon\node_modules\svgo\plugins\removeDoctype.js121436361000000000 0
 64C:\Users\tarun\Downloads\Biocon\node_modules\css-tree\lib\common133275266324826791 1
 64C:\Users\tarun\Downloads\Biocon\node_modules\readdirp\index.d.ts121436361000000000 0
@@ -302,6 +301,12 @@
 61C:\Users\tarun\Downloads\Biocon\node_modules\lmdb\src\dbi.cpp121436361000000000 0
 81C:\Users\tarun\Downloads\Biocon\node_modules\@swc\helpers\lib\_sliced_to_array.js133133340060000000 0
 55C:\Users\tarun\Downloads\Biocon\node_modules\color-name133275266357166777 1
+76C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\data\regions\CF.js121436361000000000 0
+62C:\Users\tarun\Downloads\Biocon\node_modules\lmdb\src\misc.cpp121436361000000000 0
+94C:\Users\tarun\Downloads\Biocon\node_modules\@babel\helper-validator-identifier\lib\keyword.js121012626000000000 0
+94C:\Users\tarun\Downloads\Biocon\node_modules\htmlnano\lib\modules\removeRedundantAttributes.js121436361000000000 0
+108C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\transformer-html\node_modules\posthtml-parser\readme.md121436361000000000 0
+54C:\Users\tarun\Downloads\Biocon\node_modules\commander133275266357156776 1
 74C:\Users\tarun\Downloads\Biocon\node_modules\css-tree\lib\lexer\generic.js121436361000000000 0
 56C:\Users\tarun\Downloads\Biocon\node_modules\cosmiconfig133275266369116661 1
 86C:\Users\tarun\Downloads\Biocon\node_modules\svgo\plugins\addAttributesToSVGElement.js121436361000000000 0
@@ -457,10 +462,6 @@
 64C:\Users\tarun\Downloads\Biocon\node_modules\type-fest\readme.md121436361000000000 0
 62C:\Users\tarun\Downloads\Biocon\node_modules\lines-and-columns133275266371975264 1
 49C:\Users\tarun\Downloads\Biocon\node_modules\lmdb133275266363729251 1
-108C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\node-resolver-core\test\fixture\packages\source\dist.js121436361000000000 0
-61C:\Users\tarun\Downloads\Biocon\node_modules\svgo\lib\svgo.js121436361000000000 0
-61C:\Users\tarun\Downloads\Biocon\node_modules\anymatch\LICENSE121436361000000000 0
-53C:\Users\tarun\Downloads\Biocon\node_modules\mdn-data133275266371975264 1
 88C:\Users\tarun\Downloads\Biocon\node_modules\lmdb\dependencies\lz4\lib\lz4frame_static.h121436361000000000 0
 65C:\Users\tarun\Downloads\Biocon\node_modules\json5\dist\index.mjs121436361000000000 0
 55C:\Users\tarun\Downloads\Biocon\node_modules\micromatch133275266368583321 1
@@ -1147,9 +1148,6 @@
 99C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\workers\test\integration\workerfarm\console.js121436361000000000 0
 64C:\Users\tarun\Downloads\Biocon\node_modules\terser\bin\uglifyjs121436361000000000 0
 63C:\Users\tarun\Downloads\Biocon\node_modules\term-size\index.js121436361000000000 0
-68C:\Users\tarun\Downloads\Biocon\node_modules\sass\types\compile.d.ts121436361000000000 0
-76C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\core\src\BundleGraph.js121436361000000000 0
-79C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\package-manager\src\Npm.js121436361000000000 0
 64C:\Users\tarun\Downloads\Biocon\node_modules\picomatch\README.md121436361000000000 0
 74C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\workers\src\Worker.js121436361000000000 0
 62C:\Users\tarun\Downloads\Biocon\node_modules\term-size\license121436361000000000 0
@@ -1422,6 +1420,9 @@
 92C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\core\test\fixtures\plugins\node_modules133275266321406777 1
 55C:\Users\tarun\Downloads\Biocon\node_modules\sass\types133275315238560029 1
 98C:\Users\tarun\Downloads\Biocon\node_modules\lmdb\node_modules\node-addon-api\package-support.json121436361000000000 0
+68C:\Users\tarun\Downloads\Biocon\node_modules\sass\types\compile.d.ts121436361000000000 0
+76C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\core\src\BundleGraph.js121436361000000000 0
+79C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\package-manager\src\Npm.js121436361000000000 0
 73C:\Users\tarun\Downloads\Biocon\node_modules\msgpackr-extract\binding.gyp121436361000000000 0
 76C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\data\regions\JP.js121436361000000000 0
 70C:\Users\tarun\Downloads\Biocon\node_modules\sass\types\exception.d.ts121436361000000000 0
@@ -1486,8 +1487,8 @@
 80C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\runtime-js\lib\helpers\node133275266314206770 1
 101C:\Users\tarun\Downloads\Biocon\node_modules\@babel\highlight\node_modules\color-convert\package.json133275266357056780 0
 99C:\Users\tarun\Downloads\Biocon\node_modules\@swc\helpers\lib\_class_static_private_field_update.js133133340060000000 0
-79C:\Users\tarun\Downloads\Biocon\node_modules\sass\types\legacy\plugin_this.d.ts121436361000000000 0
 63C:\Users\tarun\Downloads\Biocon\node_modules\json5\lib\index.js121436361000000000 0
+79C:\Users\tarun\Downloads\Biocon\node_modules\sass\types\legacy\plugin_this.d.ts121436361000000000 0
 76C:\Users\tarun\Downloads\Biocon\node_modules\lmdb\dependencies\lz4\lib\lz4.h121436361000000000 0
 81C:\Users\tarun\Downloads\Biocon\node_modules\@lmdb\lmdb-win32-x64\node.abi93.node121436361000000000 0
 74C:\Users\tarun\Downloads\Biocon\node_modules\sass\types\legacy\render.d.ts121436361000000000 0
@@ -1523,8 +1524,6 @@
 60C:\Users\tarun\Downloads\Biocon\node_modules\chalk\readme.md121436361000000000 0
 63C:\Users\tarun\Downloads\Biocon\node_modules\readdirp\README.md121436361000000000 0
 74C:\Users\tarun\Downloads\Biocon\node_modules\react-refresh\build-info.json121436361000000000 0
-85C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\transformer-js\lib\loadNative.js121436361000000000 0
-76C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\data\regions\WS.js121436361000000000 0
 78C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\utils\src\PromiseQueue.js121436361000000000 0
 62C:\Users\tarun\Downloads\Biocon\node_modules\react-refresh\cjs133275266308726769 1
 82C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\transformer-html\node_modules133275266354326781 1
@@ -2980,6 +2979,8 @@
 76C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\data\regions\VN.js121436361000000000 0
 93C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\data\features\insertadjacenthtml.js121436361000000000 0
 76C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\data\regions\WF.js121436361000000000 0
+85C:\Users\tarun\Downloads\Biocon\node_modules\@parcel\transformer-js\lib\loadNative.js121436361000000000 0
+76C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\data\regions\WS.js121436361000000000 0
 76C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\data\regions\YE.js121436361000000000 0
 76C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\data\regions\ZA.js121436361000000000 0
 78C:\Users\tarun\Downloads\Biocon\node_modules\caniuse-lite\data\features\aac.js121436361000000000 0
