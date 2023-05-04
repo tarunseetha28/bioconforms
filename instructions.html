@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Merriweather Sans:wght@300;400;700&display=swap" />
+
+</head>
+
+<script>
+    function toggleDropdown() {
+        const dropdownDiv = document.querySelector('.dropdown');
+        dropdownDiv.classList.toggle('active');
+    }
+
+
+</script>
+
+<div class="navbar">
+    <img class="navlogo" src="./public/group-598@2x.png" alt="">
+    <div class="navitems">
+        <a href="./index.html">Home</a>
+        <a href="./instructions.html">Instructions</a>
+        <a href="./onlineform.html">Online Form</a>
+        <a href="#">Download Form</a>
+        <a href="#">Contact</a>
+    </div>
+    <button onclick="toggleDropdown()" class="hamburger">
+        <i style="font-size: 2rem; color: 003E76;" class="bi bi-list"></i>
+    </button>
+</div>
+<div class="dropdown">
+    <a href="#">Home</a>
+    <a href="#">Instructions</a>
+    <a href="#">Online Form</a>
+    <a href="#">Download Form</a>
+    <a href="#">Contact</a>
+</div>
+
+
+<div class="insthero"></div>
+
+<div class="body-wrapper">
+    <div class="instbody">
+        <div class="hero-btn">
+            <button class="titlebtn ">Instructions</button>
+        </div>
+        <div class="intrdetails">
+            <h2>Instructions to fill the Adverse Event/Product Complaint Reporting Form
+            </h2>
+            <p><b><b>Dear Consumer/Healthcare professional,</b></b></p>
+            <p>
+                You have been provided here with instructions to fill all the sections of the form. Apart from this,
+                there is a ready access to<br> specific instructions in different sections of the form when you fill the
+                form online. It is compulsory to fill all the information<br> marked with an asterix (*).
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="body-wrapper">
+    <div class="container">
+        <div class="faq">
+            <div class="question">Reporter’s Details
+                <span class="arrowplus"><i class="bi bi-arrow-right"></i></span><span class="arrowminus"><i
+                        class="bi bi-arrow-down"></i></span>
+            </div>
+            <div class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s.</div>
+            <div class="question">Patient Information
+                <span class="arrowplus"><i class="bi bi-arrow-right"></i></span><span class="arrowminus"><i
+                        class="bi bi-arrow-down"></i></span>
+            </div>
+            <div class="answer">It is a long established fact that a reader will be distracted by the readable content
+                of a page when looking at its layout.</div>
+            <div class="question">Suspect Products’ Information
+                <span class="arrowplus"><i class="bi bi-arrow-right"></i></span><span class="arrowminus"><i
+                        class="bi bi-arrow-down"></i></span>
+            </div>
+            <div class="answer">Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
+            <div class="question">Product-related problem
+                <span class="arrowplus"><i class="bi bi-arrow-right"></i></span><span class="arrowminus"><i
+                        class="bi bi-arrow-down"></i></span>
+            </div>
+            <div class="answer">There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable.</div>
+            <div class="question">Adverse Event/Side Effect Information
+                <span class="arrowplus"><i class="bi bi-arrow-right"></i></span><span class="arrowminus"><i
+                        class="bi bi-arrow-down"></i></span>
+            </div>
+            <div class="answer">There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable.</div>
+            <div class="question">Event Description or product complaint description
+                <span class="arrowplus"><i class="bi bi-arrow-right"></i></span><span class="arrowminus"><i
+                        class="bi bi-arrow-down"></i></span>
+            </div>
+            <div class="answer">There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable.</div>
+            <div class="question">Severity And Causality
+                <span class="arrowplus"><i class="bi bi-arrow-right"></i></span><span class="arrowminus"><i
+                        class="bi bi-arrow-down"></i></span>
+            </div>
+            <div class="answer">There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable.</div>
+            <div class="question">Causality assessment criteria:
+                <span class="arrowplus"><i class="bi bi-arrow-right"></i></span><span class="arrowminus"><i
+                        class="bi bi-arrow-down"></i></span>
+            </div>
+            <div class="answer">There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable.</div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                question.classList.toggle('collapsed');
+                const arrowPlus = question.querySelector('.arrowplus');
+                const arrowMinus = question.querySelector('.arrowminus');
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    arrowPlus.style.display = 'inline-block';
+                    arrowMinus.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                    arrowPlus.style.display = 'none';
+                    arrowMinus.style.display = 'inline-block';
+                }
+            });
+        });
+    </script>
+
+
+</div>
+
+
+<div class="footer-wrapper">
+    <div class="home-crf">
+        <img class="navlogo" src="./public/group-598@2x.png" alt="">
+        <div class="home-crfcontent">
+            <div class="footer-crfs">
+                <p>Write to us at below mentioned postal address,<br>
+                <div>
+                    <b>BIOCON PHARMACOVIGILANCE</b><br>
+                    <p>Biocon Biologics Pharmacovigilance team,<br>
+                        Tower 3, Semicon Park,<br>
+                        Plot No 29-P1 & 31-P, <br>
+                        KIADB Industrial Area,<br>
+                        Electronic City Phase - 2,<br>
+                        Bangalore, Karnataka, India – 56010</p>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-crfs">
+                <p>You can call Biocon Biologics Ltd at below Toll Free Numbers and Biocon Pharmacovigilance Department
+                    number
+                    (+91 80 6775 5356) and report the adverse events/ side effects/product quality complaints
+                    telephonically</p>
+                <div class="footer-cta">
+                    <span>
+                        <p><b>India</b></p>
+                        <p><b>UAE</b></p>
+                        <p><b>US</b></p>
+                        <p><b>Fax No.</b></p>
+                    </span>
+                    <span>
+                        <p>: 1800 102 9465</p>
+                        <p>: 8005 6994 7388</p>
+                        <p>: 00 1833 986 1468</p>
+                        <p>: +91 80 6775 5323</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-disclaimer">
+    <div class="home-crf fd">
+        <h2>DISCLAIMER</h2>
+        <span>Biocon Biologics is committed to holding patient’s and reporter’s personal data in strict confidence.
+            Personal
+            data, here, means any information by which a person is, directly or indirectly, identified or identifiable,
+            which
+            includes, but is not limited, to name, address, contact number, email address, genetic data and data
+            concerning
+            health. Biocon Biologics strictly adheres to applicable data privacy and data integrity laws, including, but
+            not
+            limited to, General Data Protection Regulations [EU] 2016/679 [“GDPR”] or its equivalent, as amended from
+            time to
+            time.</span>
+    </div>
+</div>
+<div class="footer-wrapper">
+    <div class="home-crf fn fd">
+        <span>Powered by Bionet</span>
+        <span>© Copyright 2023, Biocon Group</span>
+    </div>
+</div>
+</div>
+
+</body>
+
+</html>

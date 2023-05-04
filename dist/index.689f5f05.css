@@ -1,0 +1,76 @@
+body {
+  font-family: var(--font-merriweather-sans);
+  margin: 0;
+  line-height: normal;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+a {
+  color: #003e76;
+  text-decoration: none;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+:root {
+  --font-merriweather-sans: "Merriweather Sans";
+  --font-merriweather: Merriweather;
+  --font-size-23xl: 42px;
+  --font-size-7xl: 26px;
+  --font-size-3xl: 22px;
+  --font-size-base: 16px;
+  --font-size-19xl: 38px;
+  --color-white: #fff;
+  --color-darkslateblue-100: #003e76;
+  --color-steelblue-100: #7da7d7;
+  --color-steelblue-200: #4097d8;
+  --color-steelblue-300: #4382c1;
+  --color-black: #000;
+}
+
+button {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #003e76;
+  text-transform: uppercase;
+  background: none;
+  border: 3px solid #7da7d7;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #003e76;
+}
+
+li {
+  align-items: flex-start;
+  margin: 0 0 24px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 200;
+  list-style: none;
+  display: flex;
+  list-style-type: none !important;
+}
+
+li img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+h2 {
+  color: #003e76;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=index.689f5f05.css.map */

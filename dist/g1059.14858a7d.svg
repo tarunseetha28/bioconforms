@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="138.577" height="138.577" viewBox="0 0 138.577 138.577"><defs><style>.a {
+  fill: #4097d8;
+}
+
+.b {
+  fill: none;
+  stroke: #4097d8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-width: 4.67px;
+}
+
+.c {
+  clip-path: url("#a");
+}
+
+</style><clipPath id="a"><path class="a" d="M0-682.665H138.577v138.577H0Z" transform="translate(0 682.665)"></path></clipPath></defs><g transform="translate(0 682.665)"><g transform="translate(26.302 -636.112)"><path class="b" d="M-214.66,0h-54.673" transform="translate(269.333)"></path></g><g transform="translate(26.302 -620.955)"><path class="b" d="M-70.845,0H-88.889" transform="translate(88.889)"></path></g><g transform="translate(60.879 -620.955)"><path class="b" d="M-78.9,0H-99" transform="translate(99)"></path></g><g transform="translate(26.302 -651.269)"><path class="b" d="M-214.66,0h-54.673" transform="translate(269.333)"></path></g><g transform="translate(26.302 -605.798)"><path class="b" d="M-214.66,0h-54.673" transform="translate(269.333)"></path></g><g transform="translate(26.303 -590.641)"><path class="b" d="M-54.728,0H-68.666" transform="translate(68.666)"></path></g><g transform="translate(52.421 -590.641)"><path class="b" d="M-66.417,0H-83.333" transform="translate(83.333)"></path></g><g transform="translate(26.302 -575.484)"><path class="b" d="M-93.515,0h-23.818" transform="translate(117.333)"></path></g><g transform="translate(0 -682.665)"><g class="c"><g transform="translate(2.755 2.707)"><path class="b" d="M-399.564-42.507V-53.333H-501.332V79.831h101.768V41.4" transform="translate(501.332 53.333)"></path></g></g></g><g transform="translate(104.523 -644.773)"><path class="b" d="M0-93.515v-23.818" transform="translate(0 117.333)"></path></g><g transform="translate(0 -682.665)"><g class="c"><g transform="translate(116.757 31.913)"><path class="b" d="M-58.9-70.75l-15-8.661,2.9-5.027a8.661,8.661,0,0,1,11.831-3.17A8.661,8.661,0,0,1-56-75.777Z" transform="translate(73.901 88.77)"></path></g><g transform="translate(72.141 41.272)"><path class="b" d="M-175.172,0l-42.322,73.3-2.294,21.3,17.3-12.635,42.322-73.3Z" transform="translate(219.787)"></path></g><g transform="translate(75.548 115.218)"><path class="b" d="M0,0,12.775,7.375"></path></g><g transform="translate(104.523 25.713)"><path class="b" d="M0,0H0"></path></g></g></g></g></svg>
