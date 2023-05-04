@@ -27,6 +27,18 @@
   display: flex;
 }
 
+.navitems a {
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+}
+
+.navitems a.active,
+.navitems a:hover {
+  padding-bottom: 4px;
+  border-bottom-color: #5993CC;
+}
+
+
 .hamburger {
   display: none !important;
 }

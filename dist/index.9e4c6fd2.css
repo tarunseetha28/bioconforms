@@ -27,6 +27,16 @@
   display: flex;
 }
 
+.navitems a {
+  border-bottom: 3px solid #0000;
+  padding-bottom: 4px;
+}
+
+.navitems a.active, .navitems a:hover {
+  border-bottom-color: #5993cc;
+  padding-bottom: 4px;
+}
+
 .hamburger {
   display: none !important;
 }

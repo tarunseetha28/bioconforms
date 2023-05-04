@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather Sans:wght@300;400;700&display=swap">
+
 </head>
 
 <script>function toggleDropdown() {
@@ -19,96 +20,125 @@
 
 </script>
 
-<div class="navbar">
-    <img class="navlogo" src="/group-598@2x.a8401882.png" alt="">
-    <div class="navitems">
-        <a href="/index.html">Home</a>
-        <a href="/instructions.html">Instructions</a>
-        <a href="/onlineform.html">Online Form</a>
+<body>
+    <div class="navbar">
+        <img class="navlogo" src="/group-598@2x.a8401882.png" alt="">
+        <div class="navitems">
+            <a href="/index.html" id="home-link">Home</a>
+            <a href="/instructions.html" id="instructions-link">Instructions</a>
+            <a href="/onlineform.html" id="form-link">Online Form</a>
+            <a href="#" id="download-link">Download Form</a>
+            <a href="#" id="contact-link">Contact</a>
+        </div>
+        <button onclick="toggleDropdown()" class="hamburger">
+            <i style="color: 3.40282e38; font-size: 2rem" class="bi bi-list"></i>
+        </button>
+    </div>
+    <div class="dropdown">
+        <a href="#">Home</a>
+        <a href="#">Instructions</a>
+        <a href="#">Online Form</a>
         <a href="#">Download Form</a>
         <a href="#">Contact</a>
     </div>
-    <button onclick="toggleDropdown()" class="hamburger">
-        <i style="color: 3.40282e38; font-size: 2rem" class="bi bi-list"></i>
-    </button>
-</div>
-<div class="dropdown">
-    <a href="#">Home</a>
-    <a href="#">Instructions</a>
-    <a href="#">Online Form</a>
-    <a href="#">Download Form</a>
-    <a href="#">Contact</a>
-</div>
 
 
+    <div class="insthero"></div>
 
-<div class="body-wrapper">
-</div>
-
-<div class="footer-wrapper">
-    <div class="home-crf">
-        <img class="navlogo" src="/group-598@2x.a8401882.png" alt="">
-        <div class="home-crfcontent">
-            <div class="footer-crfs">
-                <p>Write to us at below mentioned postal address,<br>
-                </p><div>
-                    <b>BIOCON PHARMACOVIGILANCE</b><br>
-                    <p>Biocon Biologics Pharmacovigilance team,<br>
-                        Tower 3, Semicon Park,<br>
-                        Plot No 29-P1 & 31-P, <br>
-                        KIADB Industrial Area,<br>
-                        Electronic City Phase - 2,<br>
-                        Bangalore, Karnataka, India – 56010</p>
-                    <p></p>
-                </div>
+    <div class="body-wrapper">
+        <div class="instbody">
+            <div class="hero-btn">
+                <button class="titlebtn ">Online Form</button>
             </div>
-            <div class="footer-crfs">
-                <p>You can call Biocon Biologics Ltd at below Toll Free Numbers and Biocon Pharmacovigilance Department
-                    number
-                    (+91 80 6775 5356) and report the adverse events/ side effects/product quality complaints
-                    telephonically</p>
-                <div class="footer-cta">
-                    <span>
-                        <p><b>India</b></p>
-                        <p><b>UAE</b></p>
-                        <p><b>US</b></p>
-                        <p><b>Fax No.</b></p>
-                    </span>
-                    <span>
-                        <p>: 1800 102 9465</p>
-                        <p>: 8005 6994 7388</p>
-                        <p>: 00 1833 986 1468</p>
-                        <p>: +91 80 6775 5323</p>
-                    </span>
+            <div class="intrdetails">
+                <h2>For reporting of adverse events/side effects and/or product quality complaints
+                </h2>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="footer-wrapper">
+        <div class="home-crf">
+            <img class="navlogo" src="/group-598@2x.a8401882.png" alt="">
+            <div class="home-crfcontent">
+                <div class="footer-crfs">
+                    <p>Write to us at below mentioned postal address,<br>
+                    </p><div>
+                        <b>BIOCON PHARMACOVIGILANCE</b><br>
+                        <p>Biocon Biologics Pharmacovigilance team,<br>
+                            Tower 3, Semicon Park,<br>
+                            Plot No 29-P1 & 31-P, <br>
+                            KIADB Industrial Area,<br>
+                            Electronic City Phase - 2,<br>
+                            Bangalore, Karnataka, India – 56010</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="footer-crfs">
+                    <p>You can call Biocon Biologics Ltd at below Toll Free Numbers and Biocon Pharmacovigilance
+                        Department
+                        number
+                        (+91 80 6775 5356) and report the adverse events/ side effects/product quality complaints
+                        telephonically</p>
+                    <div class="footer-cta">
+                        <span>
+                            <p><b>India</b></p>
+                            <p><b>UAE</b></p>
+                            <p><b>US</b></p>
+                            <p><b>Fax No.</b></p>
+                        </span>
+                        <span>
+                            <p>: 1800 102 9465</p>
+                            <p>: 8005 6994 7388</p>
+                            <p>: 00 1833 986 1468</p>
+                            <p>: +91 80 6775 5323</p>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="footer-disclaimer">
-    <div class="home-crf fd">
-        <h2>DISCLAIMER</h2>
-        <span>Biocon Biologics is committed to holding patient’s and reporter’s personal data in strict confidence.
-            Personal
-            data, here, means any information by which a person is, directly or indirectly, identified or identifiable,
-            which
-            includes, but is not limited, to name, address, contact number, email address, genetic data and data
-            concerning
-            health. Biocon Biologics strictly adheres to applicable data privacy and data integrity laws, including, but
-            not
-            limited to, General Data Protection Regulations [EU] 2016/679 [“GDPR”] or its equivalent, as amended from
-            time to
-            time.</span>
+    <div class="footer-disclaimer">
+        <div class="home-crf fd">
+            <h2>DISCLAIMER</h2>
+            <span>Biocon Biologics is committed to holding patient’s and reporter’s personal data in strict confidence.
+                Personal
+                data, here, means any information by which a person is, directly or indirectly, identified or
+                identifiable,
+                which
+                includes, but is not limited, to name, address, contact number, email address, genetic data and data
+                concerning
+                health. Biocon Biologics strictly adheres to applicable data privacy and data integrity laws, including,
+                but
+                not
+                limited to, General Data Protection Regulations [EU] 2016/679 [“GDPR”] or its equivalent, as amended
+                from
+                time to
+                time.</span>
+        </div>
     </div>
-</div>
-<div class="footer-wrapper">
-    <div class="home-crf fn fd">
-        <span>Powered by Bionet</span>
-        <span>© Copyright 2023, Biocon Group</span>
+    <div class="footer-wrapper">
+        <div class="home-crf fn fd">
+            <span>Powered by Bionet</span>
+            <span>© Copyright 2023, Biocon Group</span>
+        </div>
     </div>
-</div>
+    
 
+    <script>const url = window.location.href;
+const links = document.querySelectorAll(".navitems a");
+links.forEach((link)=>{
+    const linkUrl = link.href;
+    if (url.includes(linkUrl)) link.classList.add("active");
+});
 
+</script>
 
+<script src="/onlineform.08dc9bc5.js"></script></body>
 
-<script src="/onlineform.08dc9bc5.js"></script></html>
+</html>
