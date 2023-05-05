@@ -639,7 +639,7 @@
 .newform {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 30px;
 }
 
 
@@ -677,7 +677,11 @@
   border-right: 3px solid #EFEFEF;
 }
 
-.nftab button:hover {}
+.newform-tab {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
 
 .nftablinks.active {
   color: #5993CC;
@@ -686,35 +690,9 @@
 }
 
 
-
-
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="date"],
-select,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-textarea {
-  height: 100px;
-}
-
-input[type="radio"] {
-  display: inline-block;
-  margin-right: 10px;
+.tabdetails-nf {
+  padding-bottom: 10px;
+  border-bottom: 5px solid #F6F6F6;
 }
 
 .name-m {

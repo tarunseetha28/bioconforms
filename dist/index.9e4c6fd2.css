@@ -597,7 +597,7 @@
 
 .newform {
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 30px;
   display: flex;
 }
 
@@ -632,33 +632,21 @@
   font-size: 1rem;
 }
 
+.newform-tab {
+  flex-direction: column;
+  row-gap: 20px;
+  display: flex;
+}
+
 .nftablinks.active {
   color: #5993cc;
   background-color: #fff;
   border-right: 3px solid #5993cc;
 }
 
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-input[type="text"], input[type="tel"], input[type="email"], input[type="date"], select, textarea {
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-textarea {
-  height: 100px;
-}
-
-input[type="radio"] {
-  margin-right: 10px;
-  display: inline-block;
+.tabdetails-nf {
+  border-bottom: 5px solid #f6f6f6;
+  padding-bottom: 10px;
 }
 
 .name-m {

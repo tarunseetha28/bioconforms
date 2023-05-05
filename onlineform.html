@@ -115,85 +115,89 @@
 
                             <div id="reporter" class="nftabcontent">
                                 <!-- reporter form code here -->
+                                <div class="newform-tab">
+                                    <h2>Reporter's Information</h2>
+                                    <form>
+                                        <label>Reporter:</label>
+                                        <input type="radio" name="reporter" value="healthcare-professional">Health care
+                                        professional
+                                        <input type="radio" name="reporter" value="patient">Patient
+                                        <input type="radio" name="reporter" value="other">Other
 
-                                <form>
-                                    <label>Reporter:</label>
-                                    <input type="radio" name="reporter" value="healthcare-professional">Health care
-                                    professional
-                                    <input type="radio" name="reporter" value="patient">Patient
-                                    <input type="radio" name="reporter" value="other">Other
+                                        <label class="name-m" for="name-initial">Name/Initial of the Reporter*:</label>
+                                        <input type="text" id="name-initial" name="name-initial"
+                                            placeholder="Enter name/initial" required>
 
-                                    <label class="name-m" for="name-initial">Name/Initial of the Reporter*:</label>
-                                    <input type="text" id="name-initial" name="name-initial"
-                                        placeholder="Enter name/initial" required>
+                                        <label for="reporter-type">Reporter Type:</label>
+                                        <select id="reporter-type" name="reporter-type">
+                                            <option value="">Select reporter type</option>
+                                            <option value="pharmacist">Pharmacist</option>
+                                            <option value="physician">Physician</option>
+                                            <option value="nurse">Nurse</option>
+                                            <option value="other">Other</option>
+                                        </select>
 
-                                    <label for="reporter-type">Reporter Type:</label>
-                                    <select id="reporter-type" name="reporter-type">
-                                        <option value="">Select reporter type</option>
-                                        <option value="pharmacist">Pharmacist</option>
-                                        <option value="physician">Physician</option>
-                                        <option value="nurse">Nurse</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                        <label for="occupation">Occupation:</label>
+                                        <input type="text" id="occupation" name="occupation"
+                                            placeholder="Enter occupation">
 
-                                    <label for="occupation">Occupation:</label>
-                                    <input type="text" id="occupation" name="occupation" placeholder="Enter occupation">
+                                        <label for="specialty">Specialty area:</label>
+                                        <input type="text" id="specialty" name="specialty"
+                                            placeholder="Enter specialty area">
 
-                                    <label for="specialty">Specialty area:</label>
-                                    <input type="text" id="specialty" name="specialty"
-                                        placeholder="Enter specialty area">
+                                        <label for="address">Address:</label>
+                                        <textarea id="address" name="address" placeholder="Enter address"></textarea>
 
-                                    <label for="address">Address:</label>
-                                    <textarea id="address" name="address" placeholder="Enter address"></textarea>
+                                        <label for="country">Country:</label>
+                                        <select id="country" name="country">
+                                            <option value="">Select country</option>
+                                            <option value="india">India</option>
+                                            <option value="other">Other</option>
+                                        </select>
 
-                                    <label for="country">Country:</label>
-                                    <select id="country" name="country">
-                                        <option value="">Select country</option>
-                                        <option value="india">India</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                        <label for="state">State:</label>
+                                        <select id="state" name="state">
+                                            <option value="">Select state</option>
+                                            <option value="MH">MH</option>
+                                            <option value="other">Other</option>
+                                        </select>
 
-                                    <label for="state">State:</label>
-                                    <select id="state" name="state">
-                                        <option value="">Select state</option>
-                                        <option value="MH">MH</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                        <label for="city">City:</label>
+                                        <select id="city" name="city">
+                                            <option value="">Select city</option>
+                                            <option value="mumbai">Mumbai</option>
+                                            <option value="other">Other</option>
+                                        </select>
 
-                                    <label for="city">City:</label>
-                                    <select id="city" name="city">
-                                        <option value="">Select city</option>
-                                        <option value="mumbai">Mumbai</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                        <label for="pincode">Pin:</label>
+                                        <select id="pincode" name="pincode">
+                                            <option value="">Select pin</option>
+                                            <option value="411043">411043</option>
+                                            <option value="other">Other</option>
+                                        </select>
 
-                                    <label for="pincode">Pin:</label>
-                                    <select id="pincode" name="pincode">
-                                        <option value="">Select pin</option>
-                                        <option value="411043">411043</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                        <label for="landline">Landline No:</label>
+                                        <input type="tel" id="landline" name="landline"
+                                            placeholder="Enter landline number">
 
-                                    <label for="landline">Landline No:</label>
-                                    <input type="tel" id="landline" name="landline" placeholder="Enter landline number">
+                                        <label for="mobile">Mobile Number:</label>
+                                        <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number">
 
-                                    <label for="mobile">Mobile Number:</label>
-                                    <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" placeholder="Enter email address">
 
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" name="email" placeholder="Enter email address">
+                                        <label for="fax">Fax No:</label>
+                                        <input type="tel" id="fax" name="fax" placeholder="Enter fax number">
 
-                                    <label for="fax">Fax No:</label>
-                                    <input type="tel" id="fax" name="fax" placeholder="Enter fax number">
+                                        <label for="report-date">Report Date:</label>
+                                        <input type="date" id="report-date" name="report-date">
 
-                                    <label for="report-date">Report Date:</label>
-                                    <input type="date" id="report-date" name="report-date">
-
-                                    <div class="form-drsu">
-                                        <button type="submit">Save as draft</button>
-                                        <button type="submit">Submit</button>
-                                    </div>
-                                </form>
+                                        <div class="form-drsu">
+                                            <button type="submit">Save as draft</button>
+                                            <button type="submit">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
 
                             <div id="patient" class="nftabcontent">

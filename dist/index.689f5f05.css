@@ -75,7 +75,7 @@ h2 {
 }
 
 label {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   display: block;
 }
 
@@ -89,6 +89,24 @@ input[type="text"] {
 
 input[type="text"]::placeholder {
   color: #999;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"], select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  display: inline-block;
 }
 
 @media screen and (width <= 600px) {
