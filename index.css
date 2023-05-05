@@ -74,7 +74,106 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .home-hero {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    padding: 15% 5% !important;
+  }
 
+  .home-heroh1 {
+    font-size: 24px !important;
+  }
+
+  .home-herop {
+    font-size: 16px !important;
+  }
+
+  .home-bbl {
+    font-size: 16px !important;
+  }
+
+  .bblreport-ct p,
+  .bblreport-list li {
+    font-size: 15px !important;
+  }
+
+  .bblreport-img {
+    width: 300px !important;
+    margin: 40px auto 0 auto;
+  }
+
+  .homeprof-cont {
+    padding: 20px !important;
+  }
+
+  .home-professionals span {
+    font-size: 20px !important;
+  }
+
+  .home-professionals p {
+    font-size: 14px !important;
+  }
+
+  .home-crfcontent {
+    flex-direction: column !important;
+    padding: 5% 0% !important;
+  }
+
+  .bblreport-ct {
+    row-gap: 20px !important;
+  }
+
+  .home-crfcontent {
+    row-gap: 20px !important;
+  }
+
+  .home-bbl,
+  .homeprof-p {
+    padding: 5% 0 !important;
+  }
+
+  .insthero,
+  .onlinehero {
+    height: 220px !important;
+  }
+
+  .question {
+    font-size: 18px !important;
+  }
+
+  .answer {
+    font-size: 16px !important;
+  }
+
+  .hero-btn {
+    margin-top: -25px !important;
+  }
+
+  .home-crfh2d {
+    display: none !important;
+  }
+
+  .home-crfh2m {
+    display: block !important;
+  }
+
+  .iconbox img {
+    height: 50px !important;
+  }
+
+  .iconbox span {
+    font-size: 18px !important;
+  }
+
+  .homecrf-wrapper {
+    padding: 5% 5% !important;
+  }
+}
+
+.home-crfh2m {
+  display: none;
+}
 
 .dropdown {
   display: none;
@@ -93,18 +192,19 @@
 }
 
 .home-hero {
-  height: 500px;
   color: white;
   background-image: url('./public/homehero.png');
   background-size: cover;
+  padding: 7% 5%;
 }
 
 
 .home-herocont {
+  display: flex;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 8% 5%;
+  flex-direction: column;
 }
 
 .home-heroh1 {
@@ -227,7 +327,7 @@
 
 .homecrf-wrapper {
   background-color: #F2F9FF;
-  padding: 2% 0%;
+  padding: 2% 5%;
 }
 
 .home-crf {
@@ -275,12 +375,12 @@
 
 .footer-wrapper {
   background-color: #F5F5F5;
-  padding: 2% 0%;
+  padding: 2% 5%;
 }
 
 .footer-disclaimer {
   background-color: #E8E8E8;
-  padding: 2% 0%;
+  padding: 2% 5%;
 }
 
 .fd h2 {
