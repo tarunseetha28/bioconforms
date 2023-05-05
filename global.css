@@ -121,3 +121,9 @@ input[type="text"]::placeholder {
     font-size: 20px !important;
   }
 }
+
+textarea,
+select,
+input {
+  font-family: var(--font-merriweather-sans) !important;
+}

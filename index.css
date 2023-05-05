@@ -215,7 +215,6 @@
   .nftab {
     margin: 0px !important;
     flex-direction: row !important;
-    overflow: scroll !important;
   }
 
   .nftablinks {
@@ -661,7 +660,6 @@
 .nftabcontent {
   flex: 1;
   display: none;
-  padding: 1rem;
 }
 
 .nftabcontent h2 {
@@ -685,4 +683,47 @@
   color: #5993CC;
   background-color: #ffffff;
   border-right: 3px solid #5993CC;
+}
+
+
+
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.name-m {
+  margin-top: 20px;
+}
+
+.form-drsu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 20px;
 }

@@ -111,4 +111,8 @@ input[type="text"]::placeholder {
   }
 }
 
+textarea, select, input {
+  font-family: var(--font-merriweather-sans) !important;
+}
+
 /*# sourceMappingURL=index.689f5f05.css.map */

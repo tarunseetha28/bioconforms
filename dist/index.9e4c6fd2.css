@@ -200,7 +200,6 @@
   .nftab {
     flex-direction: row !important;
     margin: 0 !important;
-    overflow: scroll !important;
   }
 
   .nftablinks {
@@ -615,7 +614,6 @@
 
 .nftabcontent {
   flex: 1;
-  padding: 1rem;
   display: none;
 }
 
@@ -638,6 +636,40 @@
   color: #5993cc;
   background-color: #fff;
   border-right: 3px solid #5993cc;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"], select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.name-m {
+  margin-top: 20px;
+}
+
+.form-drsu {
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 20px;
+  display: flex;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

@@ -4,60 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <title>Tab Example</title>
-    <style>.container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+    <style>form {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
 }
 
-.text {
-  text-align: center;
-  padding: 20px;
+label {
+  margin-bottom: 10px;
+  display: block;
 }
 
-.image {
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"], select, textarea {
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
-.image img {
-  max-width: 100%;
+textarea {
+  height: 100px;
 }
 
-@media (width >= 768px) {
-  .container {
-    flex-direction: row;
-  }
+input[type="radio"] {
+  margin-right: 10px;
+  display: inline-block;
+}
 
-  .text {
-    flex: 1;
-    order: 2;
-    padding: 0 20px;
-  }
-
-  .image {
-    flex: 1;
-    order: 1;
-  }
+button[type="submit"] {
+  color: #fff;
+  cursor: pointer;
+  background-color: #4382c1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
 
 </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="text">
-            <h2>Text</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="image">
-            <img src="/sciencetabletandportraitofamalescientistd20230110232449utc@2x.ebb30946.png" alt="">
-        </div>
-    </div>
+    <form>
+        <label>Reporter:</label>
+        <input type="radio" name="reporter" value="healthcare-professional">Health care
+        professional
+        <input type="radio" name="reporter" value="patient">Patient
+        <input type="radio" name="reporter" value="other">Other
 
+        <label for="name-initial">Name/Initial of the Reporter*:</label>
+        <input type="text" id="name-initial" name="name-initial" required="">
+
+        <label for="reporter-type">Reporter Type:</label>
+        <select id="reporter-type" name="reporter-type">
+            <option value="pharmacist">Pharmacist</option>
+            <option value="physician">Physician</option>
+            <option value="nurse">Nurse</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation">
+
+        <label for="specialty">Specialty area:</label>
+        <input type="text" id="specialty" name="specialty">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="landline">Landline No:</label>
+        <input type="tel" id="landline" name="landline">
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="fax">Fax No:</label>
+        <input type="tel" id="fax" name="fax">
+
+        <label for="report-date">Report Date:</label>
+        <input type="date" id="report-date" name="report-date">
+
+        <input type="submit" value="Save as draft">
+        <input type="submit" value="Submit">
+    </form>
 <script src="/test.b1b66a44.js"></script></body>
 
 </html>
