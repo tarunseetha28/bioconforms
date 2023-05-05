@@ -68,6 +68,19 @@
   .navlogo {
     width: 200px;
   }
+
+  .bblreport {
+    flex-direction: column !important;
+  }
+
+  .bblreport-img {
+    margin: 40px auto 0 !important;
+  }
+
+  .home-professionals {
+    flex-direction: column !important;
+    row-gap: 20px !important;
+  }
 }
 
 @media screen and (width <= 600px) {
@@ -154,6 +167,45 @@
   .homecrf-wrapper {
     padding: 5% !important;
   }
+
+  .tab {
+    flex-direction: column-reverse !important;
+  }
+
+  .tabdetails {
+    justify-content: space-between !important;
+    padding: 10px !important;
+  }
+
+  .tablinks {
+    padding: 15px 30px !important;
+  }
+
+  .tabcontent {
+    padding: 15px !important;
+  }
+
+  .existing-form {
+    width: 100% !important;
+  }
+
+  .newform-note {
+    font-size: 10px !important;
+  }
+
+  .nftab-container {
+    flex-direction: column !important;
+  }
+
+  .nftab {
+    flex-direction: row !important;
+    margin: 0 !important;
+    overflow: scroll !important;
+  }
+
+  .nftablinks {
+    padding: 0 !important;
+  }
 }
 
 .home-crfh2m, .dropdown {
@@ -203,7 +255,7 @@
 }
 
 .bblreport {
-  flex-flow: wrap;
+  flex-direction: row;
   padding: 1% 0%;
   display: flex;
 }
@@ -232,7 +284,7 @@
 
 .home-professionals {
   color: #fff;
-  flex-wrap: wrap;
+  flex-direction: row;
   column-gap: 40px;
   padding: 2% 0%;
   display: flex;

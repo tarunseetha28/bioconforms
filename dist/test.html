@@ -4,87 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Tab Example</title>
-    <style>.nftab-container {
-  flex-direction: row;
-  display: flex;
-}
-
-.nftab {
+    <style>.container {
   flex-direction: column;
-  margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 
-.nftab button {
-  cursor: pointer;
-  text-align: left;
-  background-color: #fff;
-  border: none;
-  border-right: 4px solid #80808031;
-  outline: none;
-  padding: 20px 40px;
-  font-size: 1rem;
+.text {
+  text-align: center;
+  padding: 20px;
 }
 
-.nftab button.active {
-  background-color: #fff;
-  border-right: 4px solid #000;
+.image {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-.nftabcontent {
-  flex: 1;
-  padding: 1rem;
-  display: none;
+.image img {
+  max-width: 100%;
 }
 
-.nftabcontent h2 {
-  margin-top: 0;
+@media (width >= 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .text {
+    flex: 1;
+    order: 2;
+    padding: 0 20px;
+  }
+
+  .image {
+    flex: 1;
+    order: 1;
+  }
 }
 
 </style>
 </head>
 
 <body>
-    <div class="nftab-container">
-        <div class="nftab">
-            <button class="nftablinks active" onclick="nfopenTab(event, 'reporter')">reporter</button>
-            <button class="nftablinks" onclick="nfopenTab(event, 'patient')">patient</button>
-            <button class="nftablinks" onclick="nfopenTab(event, 'suspect')">suspect</button>
-            <button class="nftablinks" onclick="nfopenTab(event, 'event')">event</button>
+    <div class="container">
+        <div class="text">
+            <h2>Text</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-
-        <div id="reporter" class="nftabcontent">
-            <h2>reporter Form</h2>
-            <!-- reporter form code here -->
-        </div>
-
-        <div id="patient" class="nftabcontent">
-            <h2>Sign Up Form</h2>
-            <!-- Sign up form code here -->
-        </div>
-
-        <div id="suspect" class="nftabcontent">
-            <h2>News</h2>
-            <!-- News form code here -->
-        </div>
-
-        <div id="event" class="nftabcontent">
-            <h2>Updates</h2>
-            <!-- Updates code here -->
+        <div class="image">
+            <img src="/sciencetabletandportraitofamalescientistd20230110232449utc@2x.ebb30946.png" alt="">
         </div>
     </div>
-    <script>document.getElementById("reporter").style.display = "block";
-function nfopenTab(nfevt, nftabName) {
-    var k, nftabcontent, nftablinks;
-    nftabcontent = document.getElementsByClassName("nftabcontent");
-    for(k = 0; k < nftabcontent.length; k++)nftabcontent[k].style.display = "none";
-    nftablinks = document.getElementsByClassName("nftablinks");
-    for(k = 0; k < nftablinks.length; k++)nftablinks[k].className = nftablinks[k].className.replace(" active", "");
-    document.getElementById(nftabName).style.display = "block";
-    nfevt.currentTarget.className += " active";
-}
 
-</script>
 <script src="/test.b1b66a44.js"></script></body>
 
 </html>

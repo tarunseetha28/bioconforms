@@ -72,6 +72,19 @@
   .navlogo {
     width: 200px;
   }
+
+  .bblreport {
+    flex-direction: column !important;
+  }
+
+  .bblreport-img {
+    margin: 40px auto 0 !important;
+  }
+
+  .home-professionals {
+    flex-direction: column !important;
+    row-gap: 20px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -169,6 +182,45 @@
   .homecrf-wrapper {
     padding: 5% 5% !important;
   }
+
+  .tab {
+    flex-direction: column-reverse !important;
+  }
+
+  .tabdetails {
+    justify-content: space-between !important;
+    padding: 10px !important;
+  }
+
+  .tablinks {
+    padding: 15px 30px !important;
+  }
+
+  .tabcontent {
+    padding: 15px !important;
+  }
+
+  .existing-form {
+    width: 100% !important;
+  }
+
+  .newform-note {
+    font-size: 10px !important;
+  }
+
+  .nftab-container {
+    flex-direction: column !important;
+  }
+
+  .nftab {
+    margin: 0px !important;
+    flex-direction: row !important;
+    overflow: scroll !important;
+  }
+
+  .nftablinks {
+    padding: 0px !important;
+  }
 }
 
 .home-crfh2m {
@@ -223,7 +275,6 @@
 }
 
 .bblreport {
-  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   padding: 1% 0%;
@@ -259,7 +310,7 @@
 }
 
 .home-professionals {
-  flex-wrap: wrap;
+  flex-direction: row;
   color: white;
   column-gap: 40px;
   display: flex;
