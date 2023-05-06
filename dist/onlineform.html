@@ -164,11 +164,7 @@
                                         </select>
 
                                         <label for="pincode">Pin:</label>
-                                        <select id="pincode" name="pincode">
-                                            <option value="">Select pin</option>
-                                            <option value="411043">411043</option>
-                                            <option value="other">Other</option>
-                                        </select>
+                                        <input type="number" id="pincode" name="pincode" placeholder="Enter pincode">
 
                                         <label for="landline">Landline No:</label>
                                         <input type="tel" id="landline" name="landline" placeholder="Enter landline number">
@@ -194,8 +190,98 @@
                             </div>
 
                             <div id="patient" class="nftabcontent">
-                                <h2>patient form</h2>
-                                <!-- Sign up form code here -->
+
+                                <!-- patient form code here -->
+                                <div class="newform-tab">
+                                    <h2>Patient's Information</h2>
+                                    <form>
+
+                                        <label class="name-m" for="name-initial-p">Name/Initial *:</label>
+                                        <input type="text" id="name-initial-p" name="name-initial-p" placeholder="Enter name/initial" required="">
+
+                                        <label>Gender</label>
+                                        <input type="radio" name="gender" value="female">Female
+                                        <input type="radio" name="gender" value="male">Male
+
+                                        <label>Ethnicity</label>
+                                        <input type="radio" name="ethnicity" value="hispanic">Hispanic/Latino
+                                        <input type="radio" name="ethnicity" value="not-hispanic">Not Hispanic/Latino
+
+                                        <label>Race</label>
+                                        <input type="radio" name="race" value="american-indian">American Indian or
+                                        Alaskan Native
+                                        <input type="radio" name="race" value="asian">Asian
+                                        <input type="radio" name="race" value="black-afam">Black or African American
+                                        <input type="radio" name="race" value="native">Native Hawaiian or Other Pacific
+                                        Islander
+                                        <input type="radio" name="race" value="white">White
+
+                                        <label for="weight">Weight (lb):</label>
+                                        <input type="text" id="weight" name="weight" placeholder="Enter weight">
+
+                                        <label for="height">Height (in):</label>
+                                        <input type="text" id="height" name="height" placeholder="Enter height">
+
+                                        <label for="reporter-type">Reporter Type:</label>
+                                        <select id="reporter-type" name="reporter-type">
+                                            <option value="">Select reporter type</option>
+                                            <option value="pharmacist">Pharmacist</option>
+                                            <option value="physician">Physician</option>
+                                            <option value="nurse">Nurse</option>
+                                            <option value="other">Other</option>
+                                        </select>
+
+                                        <label for="dob">Date of Birth</label>
+                                        <input type="date" id="dob" name="dob">
+
+                                        <label for="age">Age (years)</label>
+                                        <input type="text" id="age" name="age" placeholder="Enter age">
+
+                                        <label for="address-p">Address:</label>
+                                        <textarea id="address-p" name="address-p" placeholder="Enter address"></textarea>
+
+                                        <label for="country">Country:</label>
+                                        <select id="country" name="country">
+                                            <option value="">Select country</option>
+                                            <option value="india">India</option>
+                                            <option value="other">Other</option>
+                                        </select>
+
+                                        <label for="state">State:</label>
+                                        <select id="state" name="state">
+                                            <option value="">Select state</option>
+                                            <option value="MH">MH</option>
+                                            <option value="other">Other</option>
+                                        </select>
+
+                                        <label for="city">City:</label>
+                                        <select id="city" name="city">
+                                            <option value="">Select city</option>
+                                            <option value="mumbai">Mumbai</option>
+                                            <option value="other">Other</option>
+                                        </select>
+
+                                        <label for="pincode">Pin:</label>
+                                        <input type="number" id="pincode" name="pincode" placeholder="Enter pincode">
+
+                                        <label for="landline">Landline No:</label>
+                                        <input type="tel" id="landline" name="landline" placeholder="Enter landline number">
+
+                                        <label for="mobile">Mobile Number:</label>
+                                        <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number">
+
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" placeholder="Enter email address">
+
+                                        <label for="fax">Fax No:</label>
+                                        <input type="tel" id="fax" name="fax" placeholder="Enter fax number">
+
+                                        <div class="form-drsu">
+                                            <button type="submit">Save as draft</button>
+                                            <button type="submit">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
 
                             <div id="suspect" class="nftabcontent">
