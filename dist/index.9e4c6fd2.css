@@ -664,6 +664,10 @@
   padding-bottom: 10px;
 }
 
+.name-m {
+  margin-top: 20px;
+}
+
 .form-drsu {
   flex-direction: row;
   justify-content: flex-end;
