@@ -95,6 +95,7 @@ input[type="text"], input[type="tel"], input[type="email"], input[type="date"], 
 
 textarea {
   height: 100px;
+  resize: none;
 }
 
 input[type="radio"] {
