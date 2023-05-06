@@ -203,7 +203,18 @@
   }
 
   .nftablinks {
+    border-bottom: 2px solid #f6f6f6 !important;
+    border-right: 0 !important;
     padding: 0 !important;
+    font-size: 12px !important;
+  }
+
+  .nftablinks.active {
+    border-bottom: 2px solid #5993cc !important;
+  }
+
+  .newform-tab {
+    padding-top: 10px !important;
   }
 }
 
@@ -647,10 +658,6 @@
 .tabdetails-nf {
   border-bottom: 5px solid #f6f6f6;
   padding-bottom: 10px;
-}
-
-.name-m {
-  margin-top: 20px;
 }
 
 .form-drsu {
