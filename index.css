@@ -231,6 +231,11 @@
   .newform-tab {
     padding-top: 10px !important;
   }
+
+  .spiform-header,
+  .spiform-details {
+    font-size: 12px !important;
+  }
 }
 
 .home-crfh2m {

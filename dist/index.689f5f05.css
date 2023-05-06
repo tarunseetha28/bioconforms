@@ -121,6 +121,14 @@ input[type="radio"] {
   h3 {
     font-size: 20px !important;
   }
+
+  label {
+    font-size: 11px !important;
+  }
+
+  input, select {
+    font-size: 12px !important;
+  }
 }
 
 textarea, select, input {
