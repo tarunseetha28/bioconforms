@@ -84,12 +84,17 @@ input[type="text"]::placeholder, textarea::placeholder, input[type="tel"]::place
 }
 
 input[type="text"], input[type="tel"], input[type="email"], input[type="date"], input[type="number"], input[type="datetime-local"], select, textarea {
+  color: #999;
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #cbcbcb;
   margin-bottom: 20px;
   padding: 10px;
   font-size: 16px;
+}
+
+input[type="radio"] + label {
+  color: #999;
 }
 
 textarea {

@@ -110,6 +110,7 @@ input[type="number"],
 input[type="datetime-local"],
 select,
 textarea {
+  color: #999;
   font-size: 16px;
   width: 100%;
   padding: 10px;
@@ -117,6 +118,12 @@ textarea {
   box-sizing: border-box;
   margin-bottom: 20px;
 }
+
+input[type="radio"]+label {
+  color: #999;
+}
+
+
 
 textarea {
   height: 100px;
