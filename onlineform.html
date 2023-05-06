@@ -364,7 +364,7 @@
                                         <label>Whether the suspect product has been send to biocon for
                                             evaluation</label>
                                         <input type="radio" name="evaluation" value="yes">Yes
-                                        <input type="radio" name="evaluation" value="no">No
+                                        <input type="radio" name="evaluation" value="no">No <br><br>
                                         <div class="formrow">
                                             <div>
                                                 <label for="df">Dose & Frequency</label>
@@ -501,95 +501,116 @@
 
                             </div>
                             <div id="event" class="nftabcontent">
-                                <h2>Event Information</h2>
-                                <form>
+                                <div class="newform-tab">
+                                    <h2>Event Information</h2>
+                                    <form>
+                                        <label>Event Type</label>
+                                        <input type="radio" name="eventtype" value="">Adverse Event/Side effect
+                                        <input type="radio" name="eventtype" value="">Product problem
+                                        <input type="radio" name="eventtype" value="">Other<br><br>
 
-                                    <label class="name-m" for="name-initial-p">Name/Initial *:</label>
-                                    <input type="text" id="name-initial-p" name="name-initial-p"
-                                        placeholder="Enter name/initial" required>
+                                        <label>Duration of adverse event/side effect</label>
+                                        <div class="formrow">
+                                            <div>
+                                                <label for="">Start Date/Time</label>
+                                                <input type="datetime-local" name="" id="">
+                                            </div>
+                                            <div>
+                                                <label for="">End Date/Time</label>
+                                                <input type="datetime-local" name="" id="">
+                                            </div>
+                                        </div>
 
-                                    <label>Gender</label>
-                                    <input type="radio" name="gender" value="female">Female
-                                    <input type="radio" name="gender" value="male">Male
-                                    </br></br>
-                                    <label>Ethnicity</label>
-                                    <input type="radio" name="ethnicity" value="hispanic">Hispanic/Latino
-                                    <input type="radio" name="ethnicity" value="not-hispanic">Not Hispanic/Latino
-                                    </br></br>
-                                    <label>Race</label>
-                                    <input type="radio" name="race" value="american-indian">American Indian or
-                                    Alaskan Native
-                                    <input type="radio" name="race" value="asian">Asian
-                                    <input type="radio" name="race" value="black-afam">Black or African American
-                                    <input type="radio" name="race" value="native">Native Hawaiian or Other Pacific
-                                    Islander
-                                    <input type="radio" name="race" value="white">White
-                                    </br></br>
-                                    <label for="weight">Weight (lb):</label>
-                                    <input type="text" id="weight" name="weight" placeholder="Enter weight">
+                                        <label for="">Approx duration of event</label>
+                                        <input type="number" name="" id="">
 
-                                    <label for="height">Height (in):</label>
-                                    <input type="text" id="height" name="height" placeholder="Enter height">
+                                        <label for="">Please describe the adverse event/product complaint (if you are a
+                                            health care professional include event term/diagnosis of the adverse
+                                            event/side
+                                            effect)*</label>
+                                        <textarea name="" id="" cols="30" rows="10"></textarea>
 
-                                    <label for="reporter-type">Reporter Type:</label>
-                                    <select id="reporter-type" name="reporter-type">
-                                        <option value="">Select reporter type</option>
-                                        <option value="pharmacist">Pharmacist</option>
-                                        <option value="physician">Physician</option>
-                                        <option value="nurse">Nurse</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                        <label for="">Action taken for Product no. 1</label>
+                                        <input type="radio" name="" id="">no change in drug dose
+                                        <input type="radio" name="" id="">interrupting drug dose
+                                        <input type="radio" name="" id="">Dose modified
+                                        <input type="radio" name="" id="">drug withdrawn
+                                        <input type="radio" name="" id="">reducing drug dose
+                                        <input type="radio" name="" id="">increased drug dose<br><br>
 
-                                    <label for="dob">Date of Birth</label>
-                                    <input type="date" id="dob" name="dob">
+                                        <label for="">Action taken for Product no. 2</label>
+                                        <input type="radio" name="" id="">no change in drug dose
+                                        <input type="radio" name="" id="">interrupting drug dose
+                                        <input type="radio" name="" id="">Dose modified
+                                        <input type="radio" name="" id="">drug withdrawn
+                                        <input type="radio" name="" id="">reducing drug dose
+                                        <input type="radio" name="" id="">increased drug dose<br><br>
 
-                                    <label for="age">Age (years)</label>
-                                    <input type="text" id="age" name="age" placeholder="Enter age">
+                                        <label for="">Relevant Tests/Laboratory data, including dates
+                                        </label>
+                                        <input type="text" name="" id="">
 
-                                    <label for="address-p">Address:</label>
-                                    <textarea id="address-p" name="address-p" placeholder="Enter address"></textarea>
+                                        <label for="">Upload the related lab reports/Physician notes
+                                            (pdf,jpg,jpeg,gif,png)
+                                        </label>
+                                        <input type="file" name="file" id="file"
+                                            accept=".pdf,.jpg,.jpeg,.gif,.png"><br><br>
 
-                                    <label for="country">Country:</label>
-                                    <select id="country" name="country">
-                                        <option value="">Select country</option>
-                                        <option value="india">India</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                        <label for="">Other relevant history, including pre-existing medical conditions
+                                            (eg.
+                                            medical diseases, allergies, pregnancy, smoking, alcohol use etc)
+                                        </label>
+                                        <input type="text" name="" id="">
 
-                                    <label for="state">State:</label>
-                                    <select id="state" name="state">
-                                        <option value="">Select state</option>
-                                        <option value="MH">MH</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                        <label for="">Information on medical products used for the treatment of the
+                                            event
+                                            (Product names and therapy dates)
+                                        </label>
+                                        <input type="text" name="" id="">
 
-                                    <label for="city">City:</label>
-                                    <select id="city" name="city">
-                                        <option value="">Select city</option>
-                                        <option value="mumbai">Mumbai</option>
-                                        <option value="other">Other</option>
-                                    </select>
+                                        <label for="">Information on other medical products used along with the suspect
+                                            product (Product names and therapy dates; exclude the products used for
+                                            treatment of events)
+                                        </label>
+                                        <input type="text" name="" id="">
 
-                                    <label for="pincode">Pin:</label>
-                                    <input type="number" id="pincode" name="pincode" placeholder="Enter pincode">
+                                        <label for="">What is the outcome of the event condition
+                                        </label>
+                                        <input type="radio" name="" id="">Resolved
+                                        <input type="radio" name="" id="">Not Recovered
+                                        <input type="radio" name="" id="">Recovered with sequelae
+                                        <input type="radio" name="" id="">Unknown
+                                        <input type="radio" name="" id="">Persisting
+                                        <input type="radio" name="" id="">Improving<br><br>
 
-                                    <label for="landline">Landline No:</label>
-                                    <input type="tel" id="landline" name="landline" placeholder="Enter landline number">
+                                        <label for="">Did the event abate after stopping the therapy? (if yes, please
+                                            indicate for which product it is applicable)
+                                        </label>
+                                        <input type="radio" name="" id="">Yes
+                                        <input type="radio" name="" id="">No
+                                        <input type="radio" name="" id="">Not applicable<br><br>
 
-                                    <label for="mobile">Mobile Number:</label>
-                                    <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number">
+                                        <label for="">Was there a rechallenge of the drug? (if yes, please indicate for
+                                            which product it is applicable)
+                                        </label>
+                                        <input type="radio" name="" id="">Yes
+                                        <input type="radio" name="" id="">No
+                                        <input type="radio" name="" id="">Not applicable<br><br>
 
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" name="email" placeholder="Enter email address">
+                                        <label for="">Rationale for relationship to the suspected drug
+                                            (To be filled by a health care professional)</label>
+                                        <input type="text" name="" id="">
 
-                                    <label for="fax">Fax No:</label>
-                                    <input type="tel" id="fax" name="fax" placeholder="Enter fax number">
+                                        <label for="">Is Health Care Professional * </label>
+                                        <input type="radio" name="" id="">Yes
+                                        <input type="radio" name="" id="">No<br><br>
 
-                                    <div class="form-drsu">
-                                        <button type="submit">Save as draft</button>
-                                        <button type="submit">Submit</button>
-                                    </div>
-                                </form>
+                                        <div class="form-drsu">
+                                            <button type="submit">Save as draft</button>
+                                            <button type="submit">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
 

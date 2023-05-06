@@ -83,7 +83,7 @@ input[type="text"]::placeholder, textarea::placeholder, input[type="tel"]::place
   color: #999;
 }
 
-input[type="text"], input[type="tel"], input[type="email"], input[type="date"], input[type="number"], select, textarea {
+input[type="text"], input[type="tel"], input[type="email"], input[type="date"], input[type="number"], input[type="datetime-local"], select, textarea {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #cbcbcb;
