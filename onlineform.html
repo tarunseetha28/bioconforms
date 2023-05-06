@@ -210,11 +210,11 @@
                                         <label>Gender</label>
                                         <input type="radio" name="gender" value="female">Female
                                         <input type="radio" name="gender" value="male">Male
-
+                                        </br></br>
                                         <label>Ethnicity</label>
                                         <input type="radio" name="ethnicity" value="hispanic">Hispanic/Latino
                                         <input type="radio" name="ethnicity" value="not-hispanic">Not Hispanic/Latino
-
+                                        </br></br>
                                         <label>Race</label>
                                         <input type="radio" name="race" value="american-indian">American Indian or
                                         Alaskan Native
@@ -223,7 +223,7 @@
                                         <input type="radio" name="race" value="native">Native Hawaiian or Other Pacific
                                         Islander
                                         <input type="radio" name="race" value="white">White
-
+                                        </br></br>
                                         <label for="weight">Weight (lb):</label>
                                         <input type="text" id="weight" name="weight" placeholder="Enter weight">
 
@@ -295,47 +295,251 @@
                             </div>
 
                             <div id="suspect" class="nftabcontent">
-                                <h2>suspect form</h2>
-                                <!-- News form code here -->
-                            </div>
 
+                                <!-- News form code here -->
+                                <div class="newform-tab">
+                                    <h2>Suspect Product Information</h2>
+
+                                    <form>
+                                        <h3 class="spiform-header">Details of product 1 : Manufacturer : Biocon Limited
+                                            *</h3>
+                                        <p class="spiform-details">Select the brand name of the Biocon product which the
+                                            patient has used. If
+                                            Brand
+                                            name is not available in the dropdown list or with the patient, select
+                                            “Others”
+                                            and mention Generic name of the medicine.</p>
+
+                                        <div class="formrow">
+                                            <div>
+                                                <label for="brandname">Brand Name:</label>
+                                                <select id="brandname" name="brandname">
+                                                    <option value="">Select brand name</option>
+                                                    <option value="pharmacist">Pharmacist</option>
+                                                    <option value="physician">Physician</option>
+                                                    <option value="nurse">Nurse</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="strength">Generic Name:</label>
+                                                <select id="strength" name="strength">
+                                                    <option value="">Select generic name</option>
+                                                    <option value="pharmacist">Pharmacist</option>
+                                                    <option value="physician">Physician</option>
+                                                    <option value="nurse">Nurse</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="doseform">Dosage form:</label>
+                                                <select id="doseform" name="doseform">
+                                                    <option value="">Select dosage form</option>
+                                                    <option value="pharmacist">Pharmacist</option>
+                                                    <option value="physician">Physician</option>
+                                                    <option value="nurse">Nurse</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="strength">Strength:</label>
+                                                <input type="text" id="strength" name="strength"
+                                                    placeholder="Enter strength">
+                                            </div>
+
+
+                                        </div>
+                                        <label for="bnln">Batch No/Lot No</label>
+                                        <input type="text" id="bnln" name="bnln" placeholder="Enter Batch No/Lot No">
+                                        <div class="formrow">
+                                            <div>
+                                                <label for="mfdate">Manufacturing date:</label>
+                                                <input type="date" id="mfdate" name="mfdate">
+                                            </div>
+                                            <div>
+                                                <label for="expdate">Expiry date:</label>
+                                                <input type="date" id="expdate" name="expdate">
+                                            </div>
+                                        </div>
+                                        <label>Whether the suspect product has been send to biocon for
+                                            evaluation</label>
+                                        <input type="radio" name="evaluation" value="yes">Yes
+                                        <input type="radio" name="evaluation" value="no">No
+                                        <div class="formrow">
+                                            <div>
+                                                <label for="df">Dose & Frequency</label>
+                                                <input type="text" id="df" name="df">
+                                            </div>
+                                            <div>
+                                                <label for="roa">Route of Administration:</label>
+                                                <select id="doseform" name="roa">
+                                                    <option value="">Select dosage form</option>
+                                                    <option value="pharmacist">Pharmacist</option>
+                                                    <option value="physician">Physician</option>
+                                                    <option value="nurse">Nurse</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="douf">Duration of use From:</label>
+                                                <input type="date" id="douf" name="douf">
+                                            </div>
+                                            <div>
+                                                <label for="dout">To:</label>
+                                                <input type="date" id="dout" name="dout">
+                                            </div>
+                                            <div>
+                                                <label for="douapproxf">Approx. duration of
+                                                    use from:</label>
+                                                <input type="date" id="douapproxf" name="douapproxf">
+                                            </div>
+                                            <div>
+                                                <label for="douapproxt">To:</label>
+                                                <input type="date" id="douapproxt" name="douapproxt">
+                                            </div>
+                                        </div>
+                                        <label for="medicond">Medical condition for which drug was used (Indication) in
+                                            the present case:</label>
+                                        <input type="text" id="medicond" name="medicond" placeholder="Input text">
+
+                                        <p class="spiform-details">If you feel any other product given along with above
+                                            product may have cause
+                                            the event, fill the section below
+                                        </p>
+                                        <h3 class="spiform-header f2">Details of product 2 : Manufacturer : <input
+                                                type="text" name="" id=""> </h3>
+                                        <div class="formrow">
+                                            <div>
+                                                <label for="brandname">Brand Name:</label>
+                                                <select id="brandname" name="brandname">
+                                                    <option value="">Select brand name</option>
+                                                    <option value="pharmacist">Pharmacist</option>
+                                                    <option value="physician">Physician</option>
+                                                    <option value="nurse">Nurse</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="strength">Generic Name:</label>
+                                                <select id="strength" name="strength">
+                                                    <option value="">Select generic name</option>
+                                                    <option value="pharmacist">Pharmacist</option>
+                                                    <option value="physician">Physician</option>
+                                                    <option value="nurse">Nurse</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="doseform">Dosage form:</label>
+                                                <select id="doseform" name="doseform">
+                                                    <option value="">Select dosage form</option>
+                                                    <option value="pharmacist">Pharmacist</option>
+                                                    <option value="physician">Physician</option>
+                                                    <option value="nurse">Nurse</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="strength">Strength:</label>
+                                                <input type="text" id="strength" name="strength"
+                                                    placeholder="Enter strength">
+                                            </div>
+                                        </div>
+                                        <label for="bnln">Batch No/Lot No</label>
+                                        <input type="text" id="bnln" name="bnln" placeholder="Enter Batch No/Lot No">
+
+                                        <div class="formrow">
+                                            <div>
+                                                <label for="mfdate">Manufacturing date:</label>
+                                                <input type="date" id="mfdate" name="mfdate">
+                                            </div>
+                                            <div>
+                                                <label for="expdate">Expiry date:</label>
+                                                <input type="date" id="expdate" name="expdate">
+
+                                            </div>
+                                            <div>
+                                                <label for="df">Dose & Frequency</label>
+                                                <input type="text" id="df" name="df">
+                                            </div>
+                                            <div>
+                                                <label for="roa">Route of Administration:</label>
+                                                <select id="doseform" name="roa">
+                                                    <option value="">Select dosage form</option>
+                                                    <option value="pharmacist">Pharmacist</option>
+                                                    <option value="physician">Physician</option>
+                                                    <option value="nurse">Nurse</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                            </div>
+                                            <div>
+                                                <label for="douf">Duration of use From:</label>
+                                                <input type="date" id="douf" name="douf">
+                                            </div>
+                                            <div>
+                                                <label for="dout">To:</label>
+                                                <input type="date" id="dout" name="dout">
+                                            </div>
+                                            <div>
+                                                <label for="douapproxf">Approx. duration of
+                                                    use from:</label>
+                                                <input type="date" id="douapproxf" name="douapproxf">
+                                            </div>
+                                            <div>
+                                                <label for="douapproxt">To:</label>
+                                                <input type="date" id="douapproxt" name="douapproxt">
+                                            </div>
+                                        </div>
+                                        <div class="form-drsu">
+                                            <button type="submit">Save as draft</button>
+                                            <button type="submit">Submit</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+
+                            </div>
                             <div id="event" class="nftabcontent">
                                 <h2>event form</h2>
                                 <!-- Updates code here -->
                             </div>
                         </div>
+
+
                     </div>
                 </div>
-
             </div>
-            <script>
-                // Open the default tab on page load
-                document.getElementById("newform").style.display = "block";
 
-                // Function to switch between tabs
-                function openTab(evt, tabName) {
+        </div>
+        <script>
+            // Open the default tab on page load
+            document.getElementById("newform").style.display = "block";
 
-                    var i, tabcontent, tablinks;
+            // Function to switch between tabs
+            function openTab(evt, tabName) {
 
-                    // Hide all tab content
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
+                var i, tabcontent, tablinks;
 
-                    // Remove the "active" class from all tab links
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-
-                    // Show the selected tab content and mark the button as active
-                    document.getElementById(tabName).style.display = "block";
-                    evt.currentTarget.className += " active";
+                // Hide all tab content
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
                 }
 
-            </script>
-        </div>
+                // Remove the "active" class from all tab links
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the selected tab content and mark the button as active
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+        </script>
+    </div>
 
     </div>
 

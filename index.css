@@ -705,3 +705,47 @@
   justify-content: flex-end;
   column-gap: 20px;
 }
+
+.spiform-header {
+  color: #003E76;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px;
+  background-color: #EFEFEF;
+}
+
+.spiform-details {
+  margin: 20px 0;
+  color: #5993CC;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.f2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.f2 input {
+  padding: 5px;
+  width: 60%;
+  margin-bottom: 0px;
+}
+
+.formrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.formrow div {
+  flex-basis: 48%;
+}
+
+.formrow label {
+  display: block;
+}

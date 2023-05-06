@@ -89,16 +89,15 @@ label {
   margin-bottom: 10px;
 }
 
-input[type="text"] {
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #CBCBCB;
-  width: 100%;
-  box-sizing: border-box;
-}
 
 
-input[type="text"]::placeholder {
+
+input[type="text"]::placeholder,
+textarea::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+input[type="date"]::placeholder,
+input[type="number"]::placeholder {
   color: #999;
 }
 
@@ -110,10 +109,10 @@ input[type="date"],
 input[type="number"],
 select,
 textarea {
+  font-size: 16px;
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid #CBCBCB;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
@@ -121,6 +120,8 @@ textarea {
 textarea {
   height: 100px;
 }
+
+
 
 input[type="radio"] {
   display: inline-block;

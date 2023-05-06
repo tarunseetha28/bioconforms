@@ -4,42 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Tab Example</title>
-    <style>form {
-  max-width: 600px;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
+    <style>.form-row {
+  flex-wrap: wrap;
+  display: flex;
 }
 
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-input[type="text"], input[type="tel"], input[type="email"], input[type="date"], select, textarea {
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-textarea {
-  height: 100px;
-}
-
-input[type="radio"] {
+.form-row label, .form-row input {
   margin-right: 10px;
-  display: inline-block;
 }
 
-button[type="submit"] {
-  color: #fff;
-  cursor: pointer;
-  background-color: #4382c1;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+.form-row label {
+  flex-basis: 30%;
+}
+
+.form-row input {
+  flex-basis: 70%;
 }
 
 </style>
@@ -47,56 +26,15 @@ button[type="submit"] {
 
 <body>
     <form>
-        <label>Reporter:</label>
-        <input type="radio" name="reporter" value="healthcare-professional">Health care
-        professional
-        <input type="radio" name="reporter" value="patient">Patient
-        <input type="radio" name="reporter" value="other">Other
-
-        <label for="name-initial">Name/Initial of the Reporter*:</label>
-        <input type="text" id="name-initial" name="name-initial" required="">
-
-        <label for="reporter-type">Reporter Type:</label>
-        <select id="reporter-type" name="reporter-type">
-            <option value="pharmacist">Pharmacist</option>
-            <option value="physician">Physician</option>
-            <option value="nurse">Nurse</option>
-            <option value="other">Other</option>
-        </select>
-
-        <label for="occupation">Occupation:</label>
-        <input type="text" id="occupation" name="occupation">
-
-        <label for="specialty">Specialty area:</label>
-        <input type="text" id="specialty" name="specialty">
-
-        <label for="address">Address:</label>
-        <textarea id="address" name="address"></textarea>
-
-        <label for="country">Country:</label>
-        <select id="country" name="country">
-            <option value="india">India</option>
-            <option value="other">Other</option>
-        </select>
-
-        <label for="landline">Landline No:</label>
-        <input type="tel" id="landline" name="landline">
-
-        <label for="mobile">Mobile Number:</label>
-        <input type="tel" id="mobile" name="mobile">
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-
-        <label for="fax">Fax No:</label>
-        <input type="tel" id="fax" name="fax">
-
-        <label for="report-date">Report Date:</label>
-        <input type="date" id="report-date" name="report-date">
-
-        <input type="submit" value="Save as draft">
-        <input type="submit" value="Submit">
+        <div class="form-row">
+            <label for="field1">Field 1:</label>
+            <input type="text" id="field1" name="field1">
+            <label for="field2">Field 2:</label>
+            <input type="text" id="field2" name="field2">
+        </div>
+        <!-- Other form fields go here -->
     </form>
+
 <script src="/test.b1b66a44.js"></script></body>
 
 </html>
