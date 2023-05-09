@@ -708,9 +708,36 @@
                                             <label for="">Do you consider the adverse event/side effect as
                                                 serious?</label>
                                             <input type="radio" name="yesproff" value="yes">Yes
-                                            <input type="radio" name="yesproff" value="no">No
+                                            <input type="radio" name="yesproff" value="no">No<br><br>
 
-                                            <h3 class="spiform-header cp">CASUALITY WITH THE PRODUCT (To be filled by a
+                                            <div style="display: none" class="effect-serious">
+                                                <label for="">Please indicate why the event is considered as serious by
+                                                    selecting any of the following</label>
+                                                <select name="adverse_event" id="adverse-event-select">
+                                                    <option value="">Select an option</option>
+                                                    <option value="death">Death</option>
+                                                    <option value="life_threatening">Life threatening</option>
+                                                    <option value="disability">Resulted in persistent or significant
+                                                        disability/incapacity</option>
+                                                    <option value="hospitalization">Required inpatient hospitalization
+                                                    </option>
+                                                    <option value="hospitalization_prolongation">Prolongation of
+                                                        existing hospitalization</option>
+                                                    <option value="congenital_anomaly">Congenital anomaly/birth defect
+                                                    </option>
+                                                    <option value="other_medically_significant">Other medically
+                                                        significant condition</option>
+                                                </select>
+
+                                                <div style="display: none" id="dode-div">
+                                                    <label for="dode">Date of death</label>
+                                                    <input type="date" name="dode" id="dode">
+                                                </div>
+
+                                            </div>
+
+                                            <h3 class="spiform-header cp">CASUALITY WITH THE PRODUCT (To be filled
+                                                by a
                                                 health care
                                                 professional)
                                             </h3>
@@ -752,6 +779,24 @@
             </div>
 
         </div>
+
+        <script>const adverseEventSelect = document.querySelector("#adverse-event-select");
+const dodeDiv = document.querySelector("#dode-div");
+adverseEventSelect.addEventListener("change", function() {
+    if (adverseEventSelect.value === "death") dodeDiv.style.display = "block";
+    else dodeDiv.style.display = "none";
+});
+
+</script>
+
+        <script>var yesProffRadios = document.querySelectorAll('input[name="yesproff"]');
+var effectSeriousDiv = document.querySelector(".effect-serious");
+for(var i = 0; i < yesProffRadios.length; i++)yesProffRadios[i].addEventListener("click", function() {
+    if (this.value === "yes") effectSeriousDiv.style.display = "block";
+    else effectSeriousDiv.style.display = "none";
+});
+
+</script>
 
         <script>var profHcRadios = document.querySelectorAll('input[name="prof-hc"]');
 var yesProffDiv = document.querySelector(".yesproff");
