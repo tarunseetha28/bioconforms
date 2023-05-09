@@ -136,10 +136,10 @@
 
                                         <label for="occupation">Occupation:</label>
                                         <input type="text" id="occupation" name="occupation" placeholder="Enter occupation">
-
-                                        <label for="specialty">Specialty area:</label>
-                                        <input type="text" id="specialty" name="specialty" placeholder="Enter specialty area">
-
+                                        <div id="specialty">
+                                            <label for="specialty">Specialty area:</label>
+                                            <input type="text" name="specialty" placeholder="Enter specialty area">
+                                        </div>
                                         <label for="address">Address:</label>
                                         <textarea id="address" name="address" placeholder="Enter address"></textarea>
 
@@ -439,11 +439,10 @@
                                             <div>
                                                 <label for="roa">Route of Administration:</label>
                                                 <select id="doseform" name="roa">
-                                                    <option value="">Select dosage form</option>
-                                                    <option value="pharmacist">Pharmacist</option>
-                                                    <option value="physician">Physician</option>
-                                                    <option value="nurse">Nurse</option>
-                                                    <option value="other">Other</option>
+                                                    <option value="Subcutaneous">Subcutaneous</option>
+                                                    <option value="Intravenous">Intravenous</option>
+                                                    <option value="Oral">Oral</option>
+                                                    <option value="others">Others</option>
                                                 </select>
                                             </div>
                                             <div>
@@ -605,6 +604,20 @@
             </div>
 
         </div>
+        <script>function toggleSpecialtyArea() {
+    var healthcareRadio = document.querySelector('input[name="reporter"][value="healthcare-professional"]');
+    var specialtyField = document.getElementById("specialty");
+    if (healthcareRadio.checked) specialtyField.style.display = "block";
+    else specialtyField.style.display = "none";
+}
+// call the function when the page loads to set the initial state
+toggleSpecialtyArea();
+// add event listeners to the radio buttons to toggle the specialty area field
+var reporterRadios = document.querySelectorAll('input[name="reporter"]');
+for(var i = 0; i < reporterRadios.length; i++)reporterRadios[i].addEventListener("click", toggleSpecialtyArea);
+
+</script>
+
         <script>function toggleDateField() {
     var evaluationYes = document.querySelector('input[name="evaluation"][value="yes"]');
     var dateField = document.getElementById("dateField");
