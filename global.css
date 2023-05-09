@@ -23,6 +23,12 @@ h3 {
   margin: 0px;
 }
 
+h1,
+h2,
+.home-bbl {
+  font-family: var(--font-merriweather);
+}
+
 :root {
   /* fonts */
   --font-merriweather-sans: "Merriweather Sans";
