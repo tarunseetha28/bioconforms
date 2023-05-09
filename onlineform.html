@@ -522,7 +522,7 @@
                                         </div>
                                         <div style="display:none;" id="prodprob">
                                             <label>or if product problem</label>
-                                            <select id="doseform" name="roa">
+                                            <select id="product-problem" name="roa">
                                                 <option value="">Suspected Counterfeit Product</option>
                                                 <option value="pharmacist">Suspected Contamination</option>
                                                 <option value="physician">Questionable Stability</option>
@@ -530,19 +530,20 @@
                                                 <option value="therapeutic-failures">Therapeutic failures (product
                                                     didn't work)</option>
                                                 <option value="product-confusion">Product confusion (caused by name,
-                                                    labeling, design, or packaging)</option>
-                                                <option value="super-potent-sub-potent">Suspected super potent or sub
-                                                    potent medication</option>
+                                                    labeling, design, or packaging)
+                                                </option>
+                                                <option value="super-potent">Suspected super potent or sub potent
+                                                    medication</option>
                                                 <option value="labeling-problems">Labeling problems caused by printing
                                                     error/omissions</option>
-                                                <option value="other-option">Others</option>
+                                                <option value="other-problem">Other</option>
                                             </select>
 
-                                            <div style="display:none;" id="other-textfield">
-                                                <label for="other-field">Please specify:</label>
-                                                <input type="text" id="other-field" name="other-field">
+                                            <div id="other-problem-details" style="display:none;">
+                                                <label for="other-problem-description">Specify if other</label>
+                                                <input type="text" id="other-problem-description"
+                                                    name="other-problem-description">
                                             </div>
-
                                         </div>
 
                                         <div style="display:none;" id="otherprob">
@@ -654,7 +655,22 @@
 
         </div>
 
+        <script>
+            // Get references to the relevant elements
+            var doseform = document.getElementById("product-problem");
+            var otherProblemDetails = document.getElementById("other-problem-details");
 
+            // Add an event listener to the select element
+            doseform.addEventListener("change", function () {
+                // If the selected option has a value of "other-problem", show the text input field
+                if (this.value === "other-problem") {
+                    otherProblemDetails.style.display = "block";
+                } else {
+                    otherProblemDetails.style.display = "none";
+                }
+            });
+
+        </script>
 
         <script>
             function toggleEventType() {
