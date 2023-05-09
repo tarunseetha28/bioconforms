@@ -551,43 +551,85 @@
                                         <textarea name="" id="" cols="30" rows="10"></textarea>
 
                                         <label for="">Action taken for Product no. 1</label>
-                                        <li> <input type="radio" name="eventtype" value="p1op1">no change in drug dose
+                                        <li> <input type="radio" name="product1" value="p1op1">no change in drug dose
                                         </li>
-                                        <li><input type="radio" name="eventtype" value="p1op2">interrupting drug dose
+                                        <li><input type="radio" name="product1" value="p1op2">interrupting drug dose
                                         </li>
-                                        <li><input type="radio" name="eventtype" value="p1op3">Dose modified</li>
-                                        <li> <input type="radio" name="eventtype" value="p1op4">drug withdrawn</li>
-                                        <li><input type="radio" name="eventtype" value="p1op5">reducing drug dose</li>
-                                        <li><input type="radio" name="eventtype" value="p1op6">reducing drug dose</li>
+                                        <li><input type="radio" name="product1" value="p1op3">Dose modified</li>
+                                        <li> <input type="radio" name="product1" value="p1op4">drug withdrawn</li>
+                                        <li><input type="radio" name="product1" value="p1op5">reducing drug dose</li>
+                                        <li><input type="radio" name="product1" value="p1op6">reducing drug dose</li>
 
                                         <div style="display: none" id="p1op2">
-                                            <p>interrupting drug dose</p>
+                                            <div class="formrow">
+                                                <div>
+                                                    <label for="">Drug withdrawn</label>
+                                                    <input type="date" name="" id="">
+                                                </div>
+                                                <div>
+                                                    <label for="">Date treatment resumed</label>
+                                                    <input type="date" name="" id="">
+                                                </div>
+                                            </div>
                                         </div>
                                         <div style="display: none" id="p1op3">
-                                            <p>Dose modified</p>
+                                            <div class="formrow">
+                                                <div>
+                                                    <label for="">Specify modified dose</label>
+                                                    <input type="text" name="" id="">
+                                                </div>
+                                                <div>
+                                                    <label for="">Date of modifying dose
+                                                    </label>
+                                                    <input type="date" name="" id="">
+                                                </div>
+                                            </div>
                                         </div>
                                         <div style="display: none" id="p1op4">
-                                            <p>drug withdrawn</p>
+                                            <label for="">Date of discontinuation
+                                            </label>
+                                            <input type="date" name="" id="">
                                         </div>
 
                                         <label for="">Action taken for Product no. 2</label>
-                                        <li> <input type="radio" name="eventtype" value="p2op1">no change in drug dose
+                                        <li> <input type="radio" name="product2" value="p2op1">no change in drug dose
                                         </li>
-                                        <li><input type="radio" name="eventtype" value="p2op2">interrupting drug dose
+                                        <li><input type="radio" name="product2" value="p2op2">interrupting drug dose
                                         </li>
-                                        <li><input type="radio" name="eventtype" value="p2op3">Dose modified</li>
-                                        <li> <input type="radio" name="eventtype" value="p2op4">drug withdrawn</li>
-                                        <li><input type="radio" name="eventtype" value="p2op5">reducing drug dose</li>
-                                        <li><input type="radio" name="eventtype" value="p2op6">reducing drug dose</li>
+                                        <li><input type="radio" name="product2" value="p2op3">Dose modified</li>
+                                        <li> <input type="radio" name="product2" value="p2op4">drug withdrawn</li>
+                                        <li><input type="radio" name="product2" value="p2op5">reducing drug dose</li>
+                                        <li><input type="radio" name="product2" value="p2op6">reducing drug dose</li>
 
                                         <div style="display: none" id="p2op2">
-                                            <p>interrupting drug dose</p>
+                                            <div class="formrow">
+                                                <div>
+                                                    <label for="">Drug withdrawn</label>
+                                                    <input type="date" name="" id="">
+                                                </div>
+                                                <div>
+                                                    <label for="">Date treatment resumed</label>
+                                                    <input type="date" name="" id="">
+                                                </div>
+                                            </div>
                                         </div>
                                         <div style="display: none" id="p2op3">
-                                            <p>Dose modified</p>
+                                            <div class="formrow">
+                                                <div>
+                                                    <label for="">Specify modified dose</label>
+                                                    <input type="text" name="" id="">
+                                                </div>
+                                                <div>
+                                                    <label for="">Date of modifying dose
+                                                    </label>
+                                                    <input type="date" name="" id="">
+                                                </div>
+                                            </div>
                                         </div>
                                         <div style="display: none" id="p2op4">
-                                            <p>drug withdrawn</p>
+                                            <label for="">Date of discontinuation
+                                            </label>
+                                            <input type="date" name="" id="">
                                         </div>
 
                                         <label for="">Relevant Tests/Laboratory data, including dates
@@ -666,9 +708,9 @@
         </div>
 
         <script>function toggleProduct1() {
-    var p1op2 = document.querySelector('input[name="eventtype"][value="p1op2"]');
-    var p1op3 = document.querySelector('input[name="eventtype"][value="p1op3"]');
-    var p1op4 = document.querySelector('input[name="eventtype"][value="p1op4"]');
+    var p1op2 = document.querySelector('input[name="product1"][value="p1op2"]');
+    var p1op3 = document.querySelector('input[name="product1"][value="p1op3"]');
+    var p1op4 = document.querySelector('input[name="product1"][value="p1op4"]');
     var p1op2Div = document.querySelector("#p1op2");
     var p1op3Div = document.querySelector("#p1op3");
     var p1op4Div = document.querySelector("#p1op4");
@@ -684,15 +726,15 @@
 // Call the function when the page loads to set the initial state
 toggleProduct1();
 // Add event listeners to the radio buttons to toggle the corresponding divs
-var eventTypeRadios = document.querySelectorAll('input[name="eventtype"]');
+var eventTypeRadios = document.querySelectorAll('input[name="product1"]');
 for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListener("click", toggleProduct1);
 
 </script>
 
         <script>function toggleProduct2() {
-    var p2op2 = document.querySelector('input[name="eventtype"][value="p2op2"]');
-    var p2op3 = document.querySelector('input[name="eventtype"][value="p2op3"]');
-    var p2op4 = document.querySelector('input[name="eventtype"][value="p2op4"]');
+    var p2op2 = document.querySelector('input[name="product2"][value="p2op2"]');
+    var p2op3 = document.querySelector('input[name="product2"][value="p2op3"]');
+    var p2op4 = document.querySelector('input[name="product2"][value="p2op4"]');
     var p2op2Div = document.querySelector("#p2op2");
     var p2op3Div = document.querySelector("#p2op3");
     var p2op4Div = document.querySelector("#p2op4");
@@ -708,7 +750,7 @@ for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListen
 // Call the function when the page loads to set the initial state
 toggleProduct2();
 // Add event listeners to the radio buttons to toggle the corresponding divs
-var eventTypeRadios = document.querySelectorAll('input[name="eventtype"]');
+var eventTypeRadios = document.querySelectorAll('input[name="product2"]');
 for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListener("click", toggleProduct2);
 
 </script>
