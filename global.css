@@ -29,6 +29,10 @@ h2,
   font-family: var(--font-merriweather);
 }
 
+.fd h2 {
+  font-family: var(--font-merriweather-sans);
+}
+
 :root {
   /* fonts */
   --font-merriweather-sans: "Merriweather Sans";
