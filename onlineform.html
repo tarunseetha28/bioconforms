@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Merriweather Sans:wght@300;400;700&display=swap" />
-
 </head>
 
 <script>
@@ -21,8 +20,6 @@
         const dropdownDiv = document.querySelector('.dropdown');
         dropdownDiv.classList.toggle('active');
     }
-
-
 </script>
 
 <body class="body-onlineform">
@@ -716,15 +713,41 @@
                                         <input type="text" name="" id="">
 
                                         <label for="">Is Health Care Professional * </label>
-                                        <input type="radio" name="prof-hc">Yes
-                                        <input type="radio" name="prof-hc">No<br><br>
+                                        <input type="radio" name="prof-hc" value="yes">Yes
+                                        <input type="radio" name="prof-hc" value="no">No<br><br>
 
-                                        <div class="yesproff">
+                                        <div class="yesproff" style="display: none;">
                                             <label for="">Do you consider the adverse event/side effect as
-                                                serious.</label>
-                                            <input type="radio" name="yesproff" id="">Yes
-                                            <input type="radio" name="yesproff" id="">No
+                                                serious?</label>
+                                            <input type="radio" name="yesproff" value="yes">Yes
+                                            <input type="radio" name="yesproff" value="no">No
+
+                                            <h3 class="spiform-header cp">CASUALITY WITH THE PRODUCT (To be filled by a
+                                                health care
+                                                professional)
+                                            </h3>
+
+                                            <label for="">Product No. 1: (Biocon Product)
+                                            </label>
+                                            <li><input type="radio" name="cp1" id="">Certainly related</li>
+                                            <li><input type="radio" name="cp1" id="">Probably related</li>
+                                            <li><input type="radio" name="cp1" id="">Possibly related</li>
+                                            <li><input type="radio" name="cp1" id="">Unlikely related</li>
+                                            <li><input type="radio" name="cp1" id="">Unclassified</li>
+                                            <li><input type="radio" name="cp1" id="">Unassessable</li>
+                                            <li><input type="radio" name="cp1" id="">Not Related</li>
+                                            <label for="">Product No. 2: (Biocon Product)
+                                            </label>
+                                            <li><input type="radio" name="cp2" id="">Certainly related</li>
+                                            <li><input type="radio" name="cp2" id="">Probably related</li>
+                                            <li><input type="radio" name="cp2" id="">Possibly related</li>
+                                            <li><input type="radio" name="cp2" id="">Unlikely related</li>
+                                            <li><input type="radio" name="cp2" id="">Unclassified</li>
+                                            <li><input type="radio" name="cp2" id="">Unassessable</li>
+                                            <li><input type="radio" name="cp2" id="">Not Related</li>
                                         </div>
+
+
 
                                         <div class="form-drsu">
                                             <button type="submit">Save as draft</button>
@@ -741,6 +764,22 @@
             </div>
 
         </div>
+
+        <script>
+            var profHcRadios = document.querySelectorAll('input[name="prof-hc"]');
+            var yesProffDiv = document.querySelector('.yesproff');
+
+            for (var i = 0; i < profHcRadios.length; i++) {
+                profHcRadios[i].addEventListener('click', function () {
+                    if (this.value === 'yes') {
+                        yesProffDiv.style.display = 'block';
+                    } else {
+                        yesProffDiv.style.display = 'none';
+                    }
+                });
+            }
+
+        </script>
 
 
         <script>
