@@ -661,12 +661,17 @@
 
                                         <label for="">What is the outcome of the event condition
                                         </label>
-                                        <input type="radio" name="" id="">Resolved
-                                        <input type="radio" name="" id="">Not Recovered
-                                        <input type="radio" name="" id="">Recovered with sequelae
-                                        <input type="radio" name="" id="">Unknown
-                                        <input type="radio" name="" id="">Persisting
-                                        <input type="radio" name="" id="">Improving<br><br>
+                                        <input type="radio" name="outcome" value="">Resolved
+                                        <input type="radio" name="outcome" value="dateofdeath">Not Recovered
+                                        <input type="radio" name="outcome" value="">Recovered with sequelae
+                                        <input type="radio" name="outcome" value="">Unknown
+                                        <input type="radio" name="outcome" value="">Persisting
+                                        <input type="radio" name="outcome" value="">Improving<br><br>
+
+                                        <div style="display: none" id="dateofdeath">
+                                            <label for="">Dateof death</label>
+                                            <input type="date" name="" id="">
+                                        </div>
 
                                         <label for="">Did the event abate after stopping the therapy? (if yes, please
                                             indicate for which product it is applicable)
@@ -707,6 +712,35 @@
 
         </div>
 
+        <script>function toggleOutcome() {
+    var notRecoveredRadio = document.querySelector('input[name="outcome"][value="dateofdeath"]');
+    var dateOfDeathDiv = document.querySelector("#dateofdeath");
+    dateOfDeathDiv.style.display = "none";
+    notRecoveredRadio.addEventListener("click", function() {
+        dateOfDeathDiv.style.display = "block";
+    });
+    var outcomeRadios = document.querySelectorAll('input[name="outcome"]');
+    for(var i = 0; i < outcomeRadios.length; i++)outcomeRadios[i].addEventListener("click", function() {
+        if (this.value !== "dateofdeath") dateOfDeathDiv.style.display = "none";
+    });
+}
+toggleOutcome();
+
+</script>
+
+        <script>function toggleCondition() {
+    var outcome = document.querySelector('input[name="outcome"][value="outcome"]');
+    var outcomeDiv = document.querySelector("#dateofdeath");
+    outcomeDiv.style.display = "none";
+    if (outcome.checked) outcomeDiv.style.display = "block";
+    else outcomeDiv.style.display = "none";
+}
+toggleCondition();
+var eventTypeRadios = document.querySelectorAll('input[name="product1"]');
+for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListener("click", toggleCondition);
+
+</script>
+
         <script>function toggleProduct1() {
     var p1op2 = document.querySelector('input[name="product1"][value="p1op2"]');
     var p1op3 = document.querySelector('input[name="product1"][value="p1op3"]');
@@ -714,18 +748,14 @@
     var p1op2Div = document.querySelector("#p1op2");
     var p1op3Div = document.querySelector("#p1op3");
     var p1op4Div = document.querySelector("#p1op4");
-    // Hide the divs initially
     p1op2Div.style.display = "none";
     p1op3Div.style.display = "none";
     p1op4Div.style.display = "none";
-    // Show the selected div based on the clicked radio button
     if (p1op2.checked) p1op2Div.style.display = "block";
     else if (p1op3.checked) p1op3Div.style.display = "block";
     else if (p1op4.checked) p1op4Div.style.display = "block";
 }
-// Call the function when the page loads to set the initial state
 toggleProduct1();
-// Add event listeners to the radio buttons to toggle the corresponding divs
 var eventTypeRadios = document.querySelectorAll('input[name="product1"]');
 for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListener("click", toggleProduct1);
 
@@ -738,29 +768,22 @@ for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListen
     var p2op2Div = document.querySelector("#p2op2");
     var p2op3Div = document.querySelector("#p2op3");
     var p2op4Div = document.querySelector("#p2op4");
-    // Hide the divs initially
     p2op2Div.style.display = "none";
     p2op3Div.style.display = "none";
     p2op4Div.style.display = "none";
-    // Show the selected div based on the clicked radio button
     if (p2op2.checked) p2op2Div.style.display = "block";
     else if (p2op3.checked) p2op3Div.style.display = "block";
     else if (p2op4.checked) p2op4Div.style.display = "block";
 }
-// Call the function when the page loads to set the initial state
 toggleProduct2();
-// Add event listeners to the radio buttons to toggle the corresponding divs
 var eventTypeRadios = document.querySelectorAll('input[name="product2"]');
 for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListener("click", toggleProduct2);
 
 </script>
 
-        <script>// Get references to the relevant elements
-var doseform = document.getElementById("product-problem");
+        <script>var doseform = document.getElementById("product-problem");
 var otherProblemDetails = document.getElementById("other-problem-details");
-// Add an event listener to the select element
 doseform.addEventListener("change", function() {
-    // If the selected option has a value of "other-problem", show the text input field
     if (this.value === "other-problem") otherProblemDetails.style.display = "block";
     else otherProblemDetails.style.display = "none";
 });
@@ -774,18 +797,14 @@ doseform.addEventListener("change", function() {
     var adverseDiv = document.querySelector("#adverseeffect");
     var prodProbDiv = document.querySelector("#prodprob");
     var otherDiv = document.querySelector("#otherprob");
-    // Hide the divs initially
     adverseDiv.style.display = "none";
     prodProbDiv.style.display = "none";
     otherDiv.style.display = "none";
-    // Show the selected div based on the clicked radio button
     if (adverseRadio.checked) adverseDiv.style.display = "block";
     else if (prodProbRadio.checked) prodProbDiv.style.display = "block";
     else if (otherRadio.checked) otherDiv.style.display = "block";
 }
-// Call the function when the page loads to set the initial state
 toggleEventType();
-// Add event listeners to the radio buttons to toggle the corresponding divs
 var eventTypeRadios = document.querySelectorAll('input[name="eventtype"]');
 for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListener("click", toggleEventType);
 
@@ -799,9 +818,7 @@ for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListen
     if (healthcareRadio.checked) specialtyField.style.display = "block";
     else specialtyField.style.display = "none";
 }
-// call the function when the page loads to set the initial state
 toggleSpecialtyArea();
-// add event listeners to the radio buttons to toggle the specialty area field
 var reporterRadios = document.querySelectorAll('input[name="reporter"]');
 for(var i = 0; i < reporterRadios.length; i++)reporterRadios[i].addEventListener("click", toggleSpecialtyArea);
 
