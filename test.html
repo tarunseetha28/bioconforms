@@ -27,15 +27,37 @@
 
 <body>
     <form>
-        <div class="form-row">
-            <label for="field1">Field 1:</label>
-            <input type="text" id="field1" name="field1">
-            <label for="field2">Field 2:</label>
-            <input type="text" id="field2" name="field2">
-        </div>
-        <!-- Other form fields go here -->
-    </form>
+        <label>Whether the suspect product has been sent to Biocon for evaluation:</label>
+        <input type="radio" name="evaluation" value="yes" onclick="showDateField()">Yes
+        <input type="radio" name="evaluation" value="no">No
 
+        <div id="dateField" style="display:none;">
+            <label>If yes, date when sent to manufacturer:</label>
+            <input type="date" name="sentDate">
+        </div>
+    </form>
+    <script>
+        function toggleDateField() {
+            var evaluationYes = document.querySelector('input[name="evaluation"][value="yes"]');
+            var dateField = document.getElementById('dateField');
+
+            if (evaluationYes.checked) {
+                dateField.style.display = 'block';
+            } else {
+                dateField.style.display = 'none';
+            }
+        }
+
+        // call the function when the page loads to set the initial state
+        toggleDateField();
+
+        // add event listeners to the radio buttons to toggle the date field
+        var evaluationRadios = document.querySelectorAll('input[name="evaluation"]');
+        for (var i = 0; i < evaluationRadios.length; i++) {
+            evaluationRadios[i].addEventListener('click', toggleDateField);
+        }
+
+    </script>
 </body>
 
 </html>

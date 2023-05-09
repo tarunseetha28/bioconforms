@@ -765,3 +765,7 @@
 .formrow label {
   display: block;
 }
+
+.douapproxfield {
+  display: flex;
+}

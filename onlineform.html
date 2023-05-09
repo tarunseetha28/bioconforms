@@ -231,14 +231,7 @@
                                         <label for="height">Height (in):</label>
                                         <input type="text" id="height" name="height" placeholder="Enter height">
 
-                                        <label for="reporter-type">Reporter Type:</label>
-                                        <select id="reporter-type" name="reporter-type">
-                                            <option value="">Select reporter type</option>
-                                            <option value="pharmacist">Pharmacist</option>
-                                            <option value="physician">Physician</option>
-                                            <option value="nurse">Nurse</option>
-                                            <option value="other">Other</option>
-                                        </select>
+
 
                                         <label for="dob">Date of Birth</label>
                                         <input type="date" id="dob" name="dob">
@@ -324,21 +317,16 @@
                                             </div>
                                             <div>
                                                 <label for="strength">Generic Name:</label>
-                                                <select id="strength" name="strength">
-                                                    <option value="">Select generic name</option>
-                                                    <option value="pharmacist">Pharmacist</option>
-                                                    <option value="physician">Physician</option>
-                                                    <option value="nurse">Nurse</option>
-                                                    <option value="other">Other</option>
-                                                </select>
+                                                <input type="text" name="" placeholder="Enter generic name" id="">
                                             </div>
                                             <div>
                                                 <label for="doseform">Dosage form:</label>
                                                 <select id="doseform" name="doseform">
-                                                    <option value="">Select dosage form</option>
-                                                    <option value="pharmacist">Pharmacist</option>
-                                                    <option value="physician">Physician</option>
-                                                    <option value="nurse">Nurse</option>
+                                                    <option value="Tablets">Tablets</option>
+                                                    <option value="Injection">Injection</option>
+                                                    <option value="Syrup">Syrup</option>
+                                                    <option value="Capsules">Capsules</option>
+                                                    <option value="Solution">Solution</option>
                                                     <option value="other">Other</option>
                                                 </select>
                                             </div>
@@ -365,7 +353,12 @@
                                         <label>Whether the suspect product has been send to biocon for
                                             evaluation</label>
                                         <input type="radio" name="evaluation" value="yes">Yes
-                                        <input type="radio" name="evaluation" value="no">No <br><br>
+                                        <input type="radio" name="evaluation" value="no">No<br><br>
+                                        <div id="dateField" style="display:none;">
+                                            <label>If yes, date when sent to manufacturer:</label>
+                                            <input type="date" name="sentDate">
+                                        </div>
+
                                         <div class="formrow">
                                             <div>
                                                 <label for="df">Dose & Frequency</label>
@@ -374,11 +367,10 @@
                                             <div>
                                                 <label for="roa">Route of Administration:</label>
                                                 <select id="doseform" name="roa">
-                                                    <option value="">Select dosage form</option>
-                                                    <option value="pharmacist">Pharmacist</option>
-                                                    <option value="physician">Physician</option>
-                                                    <option value="nurse">Nurse</option>
-                                                    <option value="other">Other</option>
+                                                    <option value="Subcutaneous">Subcutaneous</option>
+                                                    <option value="Intravenous">Intravenous</option>
+                                                    <option value="Oral">Oral</option>
+                                                    <option value="others">Others</option>
                                                 </select>
                                             </div>
                                             <div>
@@ -389,14 +381,19 @@
                                                 <label for="dout">To:</label>
                                                 <input type="date" id="dout" name="dout">
                                             </div>
-                                            <div>
-                                                <label for="douapproxf">Approx. duration of
-                                                    use from:</label>
-                                                <input type="date" id="douapproxf" name="douapproxf">
-                                            </div>
-                                            <div>
-                                                <label for="douapproxt">To:</label>
-                                                <input type="date" id="douapproxt" name="douapproxt">
+
+                                            <label for="douapproxf">or if exact dates not known approx. <br>duration of
+                                                use</label>
+                                            <div class="douapproxfield">
+                                                <input type="number" name="" id="">
+                                                <select id="doseform" name="roa">
+                                                    <option value="">Hrs</option>
+                                                    <option value="pharmacist">Mins</option>
+                                                    <option value="physician">Days</option>
+                                                    <option value="nurse">Weeks</option>
+                                                    <option value="other">Months</option>
+                                                    <option value="other">Years</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <label for="medicond">Medical condition for which drug was used (Indication) in
@@ -412,31 +409,20 @@
                                         <div class="formrow">
                                             <div>
                                                 <label for="brandname">Brand Name:</label>
-                                                <select id="brandname" name="brandname">
-                                                    <option value="">Select brand name</option>
-                                                    <option value="pharmacist">Pharmacist</option>
-                                                    <option value="physician">Physician</option>
-                                                    <option value="nurse">Nurse</option>
-                                                    <option value="other">Other</option>
-                                                </select>
+                                                <input type="text" name="" placeholder="Enter brand name" id="">
                                             </div>
                                             <div>
                                                 <label for="strength">Generic Name:</label>
-                                                <select id="strength" name="strength">
-                                                    <option value="">Select generic name</option>
-                                                    <option value="pharmacist">Pharmacist</option>
-                                                    <option value="physician">Physician</option>
-                                                    <option value="nurse">Nurse</option>
-                                                    <option value="other">Other</option>
-                                                </select>
+                                                <input type="text" name="" placeholder="Enter generic name" id="">
                                             </div>
                                             <div>
                                                 <label for="doseform">Dosage form:</label>
                                                 <select id="doseform" name="doseform">
-                                                    <option value="">Select dosage form</option>
-                                                    <option value="pharmacist">Pharmacist</option>
-                                                    <option value="physician">Physician</option>
-                                                    <option value="nurse">Nurse</option>
+                                                    <option value="Tablets">Tablets</option>
+                                                    <option value="Injection">Injection</option>
+                                                    <option value="Syrup">Syrup</option>
+                                                    <option value="Capsules">Capsules</option>
+                                                    <option value="Solution">Solution</option>
                                                     <option value="other">Other</option>
                                                 </select>
                                             </div>
@@ -481,15 +467,26 @@
                                                 <label for="dout">To:</label>
                                                 <input type="date" id="dout" name="dout">
                                             </div>
-                                            <div>
+                                            <!-- <div>
                                                 <label for="douapproxf">Approx. duration of
                                                     use from:</label>
                                                 <input type="date" id="douapproxf" name="douapproxf">
                                             </div>
-                                            <div>
-                                                <label for="douapproxt">To:</label>
-                                                <input type="date" id="douapproxt" name="douapproxt">
+                                         -->
+                                            <label for="douapproxf">or if exact dates not known approx. <br>duration of
+                                                use</label>
+                                            <div class="douapproxfield">
+                                                <input type="number" name="" id="">
+                                                <select id="doseform" name="roa">
+                                                    <option value="">Hrs</option>
+                                                    <option value="pharmacist">Mins</option>
+                                                    <option value="physician">Days</option>
+                                                    <option value="nurse">Weeks</option>
+                                                    <option value="other">Months</option>
+                                                    <option value="other">Years</option>
+                                                </select>
                                             </div>
+
                                         </div>
                                         <div class="form-drsu">
                                             <button type="submit">Save as draft</button>
@@ -622,6 +619,28 @@
             </div>
 
         </div>
+        <script>
+            function toggleDateField() {
+                var evaluationYes = document.querySelector('input[name="evaluation"][value="yes"]');
+                var dateField = document.getElementById('dateField');
+
+                if (evaluationYes.checked) {
+                    dateField.style.display = 'block';
+                } else {
+                    dateField.style.display = 'none';
+                }
+            }
+
+            // call the function when the page loads to set the initial state
+            toggleDateField();
+
+            // add event listeners to the radio buttons to toggle the date field
+            var evaluationRadios = document.querySelectorAll('input[name="evaluation"]');
+            for (var i = 0; i < evaluationRadios.length; i++) {
+                evaluationRadios[i].addEventListener('click', toggleDateField);
+            }
+
+        </script>
         <script>
             // Open the default tab on page load
             document.getElementById("newform").style.display = "block";
