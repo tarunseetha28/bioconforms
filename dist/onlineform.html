@@ -551,20 +551,44 @@
                                         <textarea name="" id="" cols="30" rows="10"></textarea>
 
                                         <label for="">Action taken for Product no. 1</label>
-                                        <li><input type="radio" name="" id="">no change in drug dose</li>
-                                        <li><input type="radio" name="" id="">interrupting drug dose</li>
-                                        <li><input type="radio" name="" id="">Dose modified</li>
-                                        <li><input type="radio" name="" id="">drug withdrawn</li>
-                                        <li><input type="radio" name="" id="">reducing drug dose</li>
-                                        <li><input type="radio" name="" id="">increased drug dose</li>
+                                        <li> <input type="radio" name="eventtype" value="p1op1">no change in drug dose
+                                        </li>
+                                        <li><input type="radio" name="eventtype" value="p1op2">interrupting drug dose
+                                        </li>
+                                        <li><input type="radio" name="eventtype" value="p1op3">Dose modified</li>
+                                        <li> <input type="radio" name="eventtype" value="p1op4">drug withdrawn</li>
+                                        <li><input type="radio" name="eventtype" value="p1op5">reducing drug dose</li>
+                                        <li><input type="radio" name="eventtype" value="p1op6">reducing drug dose</li>
+
+                                        <div style="display: none" id="p1op2">
+                                            <p>interrupting drug dose</p>
+                                        </div>
+                                        <div style="display: none" id="p1op3">
+                                            <p>Dose modified</p>
+                                        </div>
+                                        <div style="display: none" id="p1op4">
+                                            <p>drug withdrawn</p>
+                                        </div>
 
                                         <label for="">Action taken for Product no. 2</label>
-                                        <li><input type="radio" name="" id="">no change in drug dose</li>
-                                        <li><input type="radio" name="" id="">interrupting drug dose</li>
-                                        <li><input type="radio" name="" id="">Dose modified</li>
-                                        <li><input type="radio" name="" id="">drug withdrawn</li>
-                                        <li><input type="radio" name="" id="">reducing drug dose</li>
-                                        <li><input type="radio" name="" id="">increased drug dose</li>
+                                        <li> <input type="radio" name="eventtype" value="p2op1">no change in drug dose
+                                        </li>
+                                        <li><input type="radio" name="eventtype" value="p2op2">interrupting drug dose
+                                        </li>
+                                        <li><input type="radio" name="eventtype" value="p2op3">Dose modified</li>
+                                        <li> <input type="radio" name="eventtype" value="p2op4">drug withdrawn</li>
+                                        <li><input type="radio" name="eventtype" value="p2op5">reducing drug dose</li>
+                                        <li><input type="radio" name="eventtype" value="p2op6">reducing drug dose</li>
+
+                                        <div style="display: none" id="p2op2">
+                                            <p>interrupting drug dose</p>
+                                        </div>
+                                        <div style="display: none" id="p2op3">
+                                            <p>Dose modified</p>
+                                        </div>
+                                        <div style="display: none" id="p2op4">
+                                            <p>drug withdrawn</p>
+                                        </div>
 
                                         <label for="">Relevant Tests/Laboratory data, including dates
                                         </label>
@@ -640,6 +664,54 @@
             </div>
 
         </div>
+
+        <script>function toggleProduct1() {
+    var p1op2 = document.querySelector('input[name="eventtype"][value="p1op2"]');
+    var p1op3 = document.querySelector('input[name="eventtype"][value="p1op3"]');
+    var p1op4 = document.querySelector('input[name="eventtype"][value="p1op4"]');
+    var p1op2Div = document.querySelector("#p1op2");
+    var p1op3Div = document.querySelector("#p1op3");
+    var p1op4Div = document.querySelector("#p1op4");
+    // Hide the divs initially
+    p1op2Div.style.display = "none";
+    p1op3Div.style.display = "none";
+    p1op4Div.style.display = "none";
+    // Show the selected div based on the clicked radio button
+    if (p1op2.checked) p1op2Div.style.display = "block";
+    else if (p1op3.checked) p1op3Div.style.display = "block";
+    else if (p1op4.checked) p1op4Div.style.display = "block";
+}
+// Call the function when the page loads to set the initial state
+toggleProduct1();
+// Add event listeners to the radio buttons to toggle the corresponding divs
+var eventTypeRadios = document.querySelectorAll('input[name="eventtype"]');
+for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListener("click", toggleProduct1);
+
+</script>
+
+        <script>function toggleProduct2() {
+    var p2op2 = document.querySelector('input[name="eventtype"][value="p2op2"]');
+    var p2op3 = document.querySelector('input[name="eventtype"][value="p2op3"]');
+    var p2op4 = document.querySelector('input[name="eventtype"][value="p2op4"]');
+    var p2op2Div = document.querySelector("#p2op2");
+    var p2op3Div = document.querySelector("#p2op3");
+    var p2op4Div = document.querySelector("#p2op4");
+    // Hide the divs initially
+    p2op2Div.style.display = "none";
+    p2op3Div.style.display = "none";
+    p2op4Div.style.display = "none";
+    // Show the selected div based on the clicked radio button
+    if (p2op2.checked) p2op2Div.style.display = "block";
+    else if (p2op3.checked) p2op3Div.style.display = "block";
+    else if (p2op4.checked) p2op4Div.style.display = "block";
+}
+// Call the function when the page loads to set the initial state
+toggleProduct2();
+// Add event listeners to the radio buttons to toggle the corresponding divs
+var eventTypeRadios = document.querySelectorAll('input[name="eventtype"]');
+for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListener("click", toggleProduct2);
+
+</script>
 
         <script>// Get references to the relevant elements
 var doseform = document.getElementById("product-problem");

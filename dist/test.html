@@ -26,35 +26,46 @@
 
 <body>
     <form>
-        <select id="doseform" name="roa">
-            <option value="">Suspected Counterfeit Product</option>
-            <option value="pharmacist">Suspected Contamination</option>
-            <option value="physician">Questionable Stability</option>
-            <option value="nurse">Defective Components</option>
-            <option value="therapeutic-failures">Therapeutic failures (product didn't work)</option>
-            <option value="product-confusion">Product confusion (caused by name, labeling, design, or packaging)
-            </option>
-            <option value="super-potent">Suspected super potent or sub potent medication</option>
-            <option value="labeling-problems">Labeling problems caused by printing error/omissions</option>
-            <option value="other-problem">Other</option>
-        </select>
+        <input type="radio" name="eventtype" value="p1op1">no change in drug dose
+        <input type="radio" name="eventtype" value="p1op2">interrupting drug dose
+        <input type="radio" name="eventtype" value="p1op3">Dose modified
+        <input type="radio" name="eventtype" value="p1op4">drug withdrawn
+        <input type="radio" name="eventtype" value="p1op5">reducing drug dose
+        <input type="radio" name="eventtype" value="p1op6">reducing drug dose<br><br>
 
-        <div id="other-problem-details" style="display: none">
-            <label for="other-problem-description">Please provide details:</label>
-            <input type="text" id="other-problem-description" name="other-problem-description">
+        <div style="display: none" id="p1op2">
+            <p>interrupting drug dose</p>
+        </div>
+        <div style="display: none" id="p1op3">
+            <p>Dose modified</p>
+        </div>
+        <div style="display: none" id="p1op4">
+            <p>drug withdrawn</p>
         </div>
 
     </form>
 
-    <script>// Get references to the relevant elements
-var doseform = document.getElementById("doseform");
-var otherProblemDetails = document.getElementById("other-problem-details");
-// Add an event listener to the select element
-doseform.addEventListener("change", function() {
-    // If the selected option has a value of "other-problem", show the text input field
-    if (this.value === "other-problem") otherProblemDetails.style.display = "block";
-    else otherProblemDetails.style.display = "none";
-});
+    <script>function toggleProduct1() {
+    var p1op2 = document.querySelector('input[name="eventtype"][value="p1op2"]');
+    var p1op3 = document.querySelector('input[name="eventtype"][value="p1op3"]');
+    var p1op4 = document.querySelector('input[name="eventtype"][value="p1op4"]');
+    var p1op2Div = document.querySelector("#p1op2");
+    var p1op3Div = document.querySelector("#p1op3");
+    var p1op4Div = document.querySelector("#p1op4");
+    // Hide the divs initially
+    p1op2Div.style.display = "none";
+    p1op3Div.style.display = "none";
+    p1op4Div.style.display = "none";
+    // Show the selected div based on the clicked radio button
+    if (p1op2.checked) p1op2Div.style.display = "block";
+    else if (p1op3.checked) p1op3Div.style.display = "block";
+    else if (p1op4.checked) p1op4Div.style.display = "block";
+}
+// Call the function when the page loads to set the initial state
+toggleProduct1();
+// Add event listeners to the radio buttons to toggle the corresponding divs
+var eventTypeRadios = document.querySelectorAll('input[name="eventtype"]');
+for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListener("click", toggleProduct1);
 
 </script>
 <script src="/test.b1b66a44.js"></script></body>
