@@ -690,16 +690,26 @@
                                         <label for="">Did the event abate after stopping the therapy? (if yes, please
                                             indicate for which product it is applicable)
                                         </label>
-                                        <input type="radio" name="" id="">Yes
-                                        <input type="radio" name="" id="">No
-                                        <input type="radio" name="" id="">Not applicable<br><br>
+                                        <input type="radio" name="applicable" value="applicable-p">Yes
+                                        <input type="radio" name="applicable" id="">No
+                                        <input type="radio" name="applicable" id="">Not applicable<br><br>
+
+                                        <div style="display:none;" id="applicable-p">
+                                            <input type="radio" name="" value="">Product 1
+                                            <input type="radio" name="" value="">Product 2<br><br>
+                                        </div>
 
                                         <label for="">Was there a rechallenge of the drug? (if yes, please indicate for
                                             which product it is applicable)
                                         </label>
-                                        <input type="radio" name="" id="">Yes
-                                        <input type="radio" name="" id="">No
-                                        <input type="radio" name="" id="">Not applicable<br><br>
+                                        <input type="radio" name="rechallenge" value="rechallenge-p">Yes
+                                        <input type="radio" name="rechallenge" id="">No
+                                        <input type="radio" name="rechallenge" id="">Not applicable<br><br>
+
+                                        <div style="display:none;" id="rechallenge-p">
+                                            <input type="radio" name="" value="">Product 1
+                                            <input type="radio" name="" value="">Product 2<br><br>
+                                        </div>
 
                                         <label for="">Rationale for relationship to the suspected drug
                                             (To be filled by a health care professional)</label>
@@ -725,6 +735,53 @@
             </div>
 
         </div>
+
+
+        <script>
+            function togglerechallenge() {
+                var yesRadio = document.querySelector('input[name="rechallenge"][value="rechallenge-p"]');
+                var rechallengeDiv = document.querySelector('#rechallenge-p');
+
+                rechallengeDiv.style.display = 'none';
+
+                yesRadio.addEventListener('click', function () {
+                    rechallengeDiv.style.display = 'block';
+                });
+
+                var noRadios = document.querySelectorAll('input[name="rechallenge"]:not([value="rechallenge-p"])');
+                for (var i = 0; i < noRadios.length; i++) {
+                    noRadios[i].addEventListener('click', function () {
+                        rechallengeDiv.style.display = 'none';
+                    });
+                }
+            }
+
+            togglerechallenge();
+
+        </script>
+
+        <script>
+            function toggleApplicable() {
+                var yesRadio = document.querySelector('input[name="applicable"][value="applicable-p"]');
+                var applicableDiv = document.querySelector('#applicable-p');
+
+                applicableDiv.style.display = 'none';
+
+                yesRadio.addEventListener('click', function () {
+                    applicableDiv.style.display = 'block';
+                });
+
+                var noRadios = document.querySelectorAll('input[name="applicable"]:not([value="applicable-p"])');
+                for (var i = 0; i < noRadios.length; i++) {
+                    noRadios[i].addEventListener('click', function () {
+                        applicableDiv.style.display = 'none';
+                    });
+                }
+            }
+
+            toggleApplicable();
+
+        </script>
 
         <script>
             function toggleOutcome() {
