@@ -27,35 +27,40 @@
 
 <body>
     <form>
-        <label>Whether the suspect product has been sent to Biocon for evaluation:</label>
-        <input type="radio" name="evaluation" value="yes" onclick="showDateField()">Yes
-        <input type="radio" name="evaluation" value="no">No
+        <select id="doseform" name="roa">
+            <option value="">Suspected Counterfeit Product</option>
+            <option value="pharmacist">Suspected Contamination</option>
+            <option value="physician">Questionable Stability</option>
+            <option value="nurse">Defective Components</option>
+            <option value="therapeutic-failures">Therapeutic failures (product didn't work)</option>
+            <option value="product-confusion">Product confusion (caused by name, labeling, design, or packaging)
+            </option>
+            <option value="super-potent">Suspected super potent or sub potent medication</option>
+            <option value="labeling-problems">Labeling problems caused by printing error/omissions</option>
+            <option value="other-problem">Other</option>
+        </select>
 
-        <div id="dateField" style="display:none;">
-            <label>If yes, date when sent to manufacturer:</label>
-            <input type="date" name="sentDate">
+        <div id="other-problem-details" style="display:none;">
+            <label for="other-problem-description">Please provide details:</label>
+            <input type="text" id="other-problem-description" name="other-problem-description">
         </div>
+
     </form>
+
     <script>
-        function toggleDateField() {
-            var evaluationYes = document.querySelector('input[name="evaluation"][value="yes"]');
-            var dateField = document.getElementById('dateField');
+        // Get references to the relevant elements
+        var doseform = document.getElementById("doseform");
+        var otherProblemDetails = document.getElementById("other-problem-details");
 
-            if (evaluationYes.checked) {
-                dateField.style.display = 'block';
+        // Add an event listener to the select element
+        doseform.addEventListener("change", function () {
+            // If the selected option has a value of "other-problem", show the text input field
+            if (this.value === "other-problem") {
+                otherProblemDetails.style.display = "block";
             } else {
-                dateField.style.display = 'none';
+                otherProblemDetails.style.display = "none";
             }
-        }
-
-        // call the function when the page loads to set the initial state
-        toggleDateField();
-
-        // add event listeners to the radio buttons to toggle the date field
-        var evaluationRadios = document.querySelectorAll('input[name="evaluation"]');
-        for (var i = 0; i < evaluationRadios.length; i++) {
-            evaluationRadios[i].addEventListener('click', toggleDateField);
-        }
+        });
 
     </script>
 </body>

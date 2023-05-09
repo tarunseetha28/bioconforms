@@ -343,6 +343,7 @@
                                             evaluation</label>
                                         <input type="radio" name="evaluation" value="yes">Yes
                                         <input type="radio" name="evaluation" value="no">No<br><br>
+
                                         <div id="dateField" style="display: none">
                                             <label>If yes, date when sent to manufacturer:</label>
                                             <input type="date" name="sentDate">
@@ -489,21 +490,56 @@
                                     <h2>Event Information</h2>
                                     <form>
                                         <label>Event Type</label>
-                                        <input type="radio" name="eventtype" value="">Adverse Event/Side effect
-                                        <input type="radio" name="eventtype" value="">Product problem
-                                        <input type="radio" name="eventtype" value="">Other<br><br>
+                                        <input type="radio" name="eventtype" value="adverseeffect">Adverse Event/Side
+                                        effect
+                                        <input type="radio" name="eventtype" value="prodprob">Product problem
+                                        <input type="radio" name="eventtype" value="otherprob">Other<br><br>
 
-                                        <label>Duration of adverse event/side effect</label>
-                                        <div class="formrow">
-                                            <div>
-                                                <label for="">Start Date/Time</label>
-                                                <input type="datetime-local" name="" id="">
-                                            </div>
-                                            <div>
-                                                <label for="">End Date/Time</label>
-                                                <input type="datetime-local" name="" id="">
+                                        <div style="display: none" id="adverseeffect">
+                                            <label>Duration of adverse event/side effect</label>
+                                            <div class="formrow">
+                                                <div>
+                                                    <label for="">Start Date/Time</label>
+                                                    <input type="datetime-local" name="" id="">
+                                                </div>
+                                                <div>
+                                                    <label for="">End Date/Time</label>
+                                                    <input type="datetime-local" name="" id="">
+                                                </div>
                                             </div>
                                         </div>
+                                        <div style="display: none" id="prodprob">
+                                            <label>or if product problem</label>
+                                            <select id="doseform" name="roa">
+                                                <option value="">Suspected Counterfeit Product</option>
+                                                <option value="pharmacist">Suspected Contamination</option>
+                                                <option value="physician">Questionable Stability</option>
+                                                <option value="nurse">Defective Components</option>
+                                                <option value="therapeutic-failures">Therapeutic failures (product
+                                                    didn't work)</option>
+                                                <option value="product-confusion">Product confusion (caused by name,
+                                                    labeling, design, or packaging)</option>
+                                                <option value="super-potent-sub-potent">Suspected super potent or sub
+                                                    potent medication</option>
+                                                <option value="labeling-problems">Labeling problems caused by printing
+                                                    error/omissions</option>
+                                                <option value="other-option">Others</option>
+                                            </select>
+
+                                            <div style="display: none" id="other-textfield">
+                                                <label for="other-field">Please specify:</label>
+                                                <input type="text" id="other-field" name="other-field">
+                                            </div>
+
+                                        </div>
+
+                                        <div style="display: none" id="otherprob">
+                                            <label>(For raising General Product queries for Biocon products, please
+                                                select this option)</label>
+                                            <input type="text" placeholder="Specify if other" name="" id="">
+                                        </div>
+
+
 
                                         <label for="">Approx duration of event</label>
                                         <input type="number" name="" id="">
@@ -604,6 +640,35 @@
             </div>
 
         </div>
+
+
+
+        <script>function toggleEventType() {
+    var adverseRadio = document.querySelector('input[name="eventtype"][value="adverseeffect"]');
+    var prodProbRadio = document.querySelector('input[name="eventtype"][value="prodprob"]');
+    var otherRadio = document.querySelector('input[name="eventtype"][value="otherprob"]');
+    var adverseDiv = document.querySelector("#adverseeffect");
+    var prodProbDiv = document.querySelector("#prodprob");
+    var otherDiv = document.querySelector("#otherprob");
+    // Hide the divs initially
+    adverseDiv.style.display = "none";
+    prodProbDiv.style.display = "none";
+    otherDiv.style.display = "none";
+    // Show the selected div based on the clicked radio button
+    if (adverseRadio.checked) adverseDiv.style.display = "block";
+    else if (prodProbRadio.checked) prodProbDiv.style.display = "block";
+    else if (otherRadio.checked) otherDiv.style.display = "block";
+}
+// Call the function when the page loads to set the initial state
+toggleEventType();
+// Add event listeners to the radio buttons to toggle the corresponding divs
+var eventTypeRadios = document.querySelectorAll('input[name="eventtype"]');
+for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListener("click", toggleEventType);
+
+</script>
+
+
+
         <script>function toggleSpecialtyArea() {
     var healthcareRadio = document.querySelector('input[name="reporter"][value="healthcare-professional"]');
     var specialtyField = document.getElementById("specialty");
