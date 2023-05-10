@@ -316,8 +316,8 @@
                                                 <input type="text" name="" placeholder="Enter generic name" id="">
                                             </div>
                                             <div>
-                                                <label for="doseform">Dosage form:</label>
-                                                <select id="doseform" name="doseform">
+                                                <label for="doseformp1">Dosage form:</label>
+                                                <select id="doseformp1" name="doseformp1">
                                                     <option value="Tablets">Tablets</option>
                                                     <option value="Injection">Injection</option>
                                                     <option value="Syrup">Syrup</option>
@@ -330,6 +330,9 @@
                                                 <label for="strength">Strength:</label>
                                                 <input type="text" id="strength" name="strength"
                                                     placeholder="Enter strength">
+                                            </div>
+                                            <div class="df-otherp1" style="display: none;">
+                                                <input type="text" placeholder="Specify other" name="" id="">
                                             </div>
 
 
@@ -362,14 +365,18 @@
                                                 <input type="text" id="df" name="df">
                                             </div>
                                             <div>
-                                                <label for="roa">Route of Administration:</label>
-                                                <select id="doseform" name="roa">
+                                                <label for="roap1">Route of Administration:</label>
+                                                <select id="roap1" name="roap1">
                                                     <option value="Subcutaneous">Subcutaneous</option>
                                                     <option value="Intravenous">Intravenous</option>
                                                     <option value="Oral">Oral</option>
                                                     <option value="others">Others</option>
                                                 </select>
+                                                <div class="roa-otherp1" style="display: none;">
+                                                    <input type="text" placeholder="Specify other" name="" id="">
+                                                </div>
                                             </div>
+
                                             <div>
                                                 <label for="douf">Duration of use From:</label>
                                                 <input type="date" id="douf" name="douf">
@@ -413,8 +420,8 @@
                                                 <input type="text" name="" placeholder="Enter generic name" id="">
                                             </div>
                                             <div>
-                                                <label for="doseform">Dosage form:</label>
-                                                <select id="doseform" name="doseform">
+                                                <label for="doseformp2">Dosage form:</label>
+                                                <select id="doseformp2" name="doseformp2">
                                                     <option value="Tablets">Tablets</option>
                                                     <option value="Injection">Injection</option>
                                                     <option value="Syrup">Syrup</option>
@@ -427,6 +434,9 @@
                                                 <label for="strength">Strength:</label>
                                                 <input type="text" id="strength" name="strength"
                                                     placeholder="Enter strength">
+                                            </div>
+                                            <div class="df-otherp2" style="display: none;">
+                                                <input type="text" placeholder="Specify other" name="" id="">
                                             </div>
                                         </div>
                                         <label for="bnln">Batch No/Lot No</label>
@@ -447,14 +457,18 @@
                                                 <input type="text" id="df" name="df">
                                             </div>
                                             <div>
-                                                <label for="roa">Route of Administration:</label>
-                                                <select id="doseform" name="roa">
+                                                <label for="roap2">Route of Administration:</label>
+                                                <select id="roap2" name="roap2">
                                                     <option value="Subcutaneous">Subcutaneous</option>
                                                     <option value="Intravenous">Intravenous</option>
                                                     <option value="Oral">Oral</option>
                                                     <option value="others">Others</option>
                                                 </select>
+                                                <div class="roa-otherp2" style="display: none;">
+                                                    <input type="text" placeholder="Specify other" name="" id="">
+                                                </div>
                                             </div>
+
                                             <div>
                                                 <label for="douf">Duration of use From:</label>
                                                 <input type="date" id="douf" name="douf">
@@ -793,6 +807,54 @@
 
         </div>
 
+        <script>
+            var roaSelectp1 = document.getElementById("roap1");
+            var roaOtherp1Div = document.querySelector(".roa-otherp1");
+            roaSelectp1.addEventListener("change", function () {
+                if (roaSelectp1.value === "others") {
+                    roaOtherp1Div.style.display = "block";
+                } else {
+                    roaOtherp1Div.style.display = "none";
+                }
+            });
+        </script>
+
+        <script>
+            var roaSelectp2 = document.getElementById("roap2");
+            var roaOtherp2Div = document.querySelector(".roa-otherp2");
+            roaSelectp2.addEventListener("change", function () {
+                if (roaSelectp2.value === "others") {
+                    roaOtherp2Div.style.display = "block";
+                } else {
+                    roaOtherp2Div.style.display = "none";
+                }
+            });
+
+        </script>
+
+        <script>
+            var doseFormp1Select = document.getElementById("doseformp1");
+            var dfOtherp1Div = document.querySelector(".df-otherp1");
+            doseFormp1Select.addEventListener("change", function () {
+                if (doseFormp1Select.value === "other") {
+                    dfOtherp1Div.style.display = "block";
+                } else {
+                    dfOtherp1Div.style.display = "none";
+                }
+            });
+        </script>
+        <script>
+            var doseFormp2Select = document.getElementById("doseformp2");
+            var dfOtherp2Div = document.querySelector(".df-otherp2");
+            doseFormp2Select.addEventListener("change", function () {
+                if (doseFormp2Select.value === "other") {
+                    dfOtherp2Div.style.display = "block";
+                } else {
+                    dfOtherp2Div.style.display = "none";
+                }
+            });
+
+        </script>
         <script>
             const adverseEventSelect = document.querySelector('#adverse-event-select');
             const dodeDiv = document.querySelector('#dode-div');
