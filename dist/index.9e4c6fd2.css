@@ -128,7 +128,7 @@
     row-gap: 20px !important;
   }
 
-  .home-bbl, .homeprof-p {
+  .homeprof-p {
     padding: 5% 0 !important;
   }
 
@@ -162,10 +162,6 @@
 
   .iconbox span {
     font-size: 18px !important;
-  }
-
-  .homecrf-wrapper {
-    padding: 5% !important;
   }
 
   .tab {
@@ -270,13 +266,13 @@
 
 .home-bbl {
   color: #5a95cd;
-  padding: 3% 0%;
+  padding: 50px 0%;
   font-size: 24px;
 }
 
 .bblreport {
   flex-direction: row;
-  padding: 1% 0%;
+  padding-bottom: 50px;
   display: flex;
 }
 
@@ -307,7 +303,7 @@
   color: #fff;
   flex-direction: row;
   column-gap: 40px;
-  padding: 2% 0%;
+  padding: 30px 0%;
   display: flex;
 }
 
@@ -365,12 +361,12 @@
 }
 
 .homeprof-p {
-  margin: 2% 0;
+  margin: 20px 0 50px;
 }
 
 .homecrf-wrapper {
   background-color: #f2f9ff;
-  padding: 2% 5%;
+  padding: 50px 5%;
 }
 
 .home-crf {
@@ -414,12 +410,12 @@
 
 .footer-wrapper {
   background-color: #f5f5f5;
-  padding: 2% 5%;
+  padding: 50px 5%;
 }
 
 .footer-disclaimer {
   background-color: #e8e8e8;
-  padding: 2% 5%;
+  padding: 30px 5%;
 }
 
 .fd h2 {
