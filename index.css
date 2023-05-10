@@ -236,6 +236,12 @@
   .spiform-details {
     font-size: 12px !important;
   }
+
+  .popup {
+    padding: 20px !important;
+    width: 80% !important;
+    transform: translate(-50%, -50%) !important;
+  }
 }
 
 .home-crfh2m {
@@ -773,4 +779,19 @@
 
 .cp {
   margin: 20px 0px;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
 }

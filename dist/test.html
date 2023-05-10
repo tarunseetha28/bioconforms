@@ -1,71 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Tab Example</title>
-    <style>.form-row {
-  flex-wrap: wrap;
-  display: flex;
+    <title>Popup</title>
+    <style>.popup {
+  z-index: 99999;
+  background-color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px #00000080;
 }
 
-.form-row label, .form-row input {
-  margin-right: 10px;
+.popup h2 {
+  margin-top: 0;
+  font-size: 24px;
 }
 
-.form-row label {
-  flex-basis: 30%;
+.popup p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.form-row input {
-  flex-basis: 70%;
+.popup button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  display: block;
 }
 
 </style>
 </head>
 
 <body>
-    <form>
-        <input type="radio" name="eventtype" value="p1op1">no change in drug dose
-        <input type="radio" name="eventtype" value="p1op2">interrupting drug dose
-        <input type="radio" name="eventtype" value="p1op3">Dose modified
-        <input type="radio" name="eventtype" value="p1op4">drug withdrawn
-        <input type="radio" name="eventtype" value="p1op5">reducing drug dose
-        <input type="radio" name="eventtype" value="p1op6">reducing drug dose<br><br>
-
-        <div style="display: none" id="p1op2">
-            <p>interrupting drug dose</p>
-        </div>
-        <div style="display: none" id="p1op3">
-            <p>Dose modified</p>
-        </div>
-        <div style="display: none" id="p1op4">
-            <p>drug withdrawn</p>
-        </div>
-
-    </form>
-
-    <script>function toggleProduct1() {
-    var p1op2 = document.querySelector('input[name="eventtype"][value="p1op2"]');
-    var p1op3 = document.querySelector('input[name="eventtype"][value="p1op3"]');
-    var p1op4 = document.querySelector('input[name="eventtype"][value="p1op4"]');
-    var p1op2Div = document.querySelector("#p1op2");
-    var p1op3Div = document.querySelector("#p1op3");
-    var p1op4Div = document.querySelector("#p1op4");
-    // Hide the divs initially
-    p1op2Div.style.display = "none";
-    p1op3Div.style.display = "none";
-    p1op4Div.style.display = "none";
-    // Show the selected div based on the clicked radio button
-    if (p1op2.checked) p1op2Div.style.display = "block";
-    else if (p1op3.checked) p1op3Div.style.display = "block";
-    else if (p1op4.checked) p1op4Div.style.display = "block";
-}
-// Call the function when the page loads to set the initial state
-toggleProduct1();
-// Add event listeners to the radio buttons to toggle the corresponding divs
-var eventTypeRadios = document.querySelectorAll('input[name="eventtype"]');
-for(var i = 0; i < eventTypeRadios.length; i++)eventTypeRadios[i].addEventListener("click", toggleProduct1);
+    <div class="popup">
+        <h2>Disclaimer</h2>
+        <p>Biocon Biologics is committed to holding patient’s and reporter’s personal data in strict confidence.
+            Personal data, here, means any information by which a person is, directly or indirectly, identified or
+            identifiable, which includes, but is not limited, to name, address, contact number, email address, genetic
+            data and data concerning health. Biocon Biologics strictly adheres to applicable data privacy and data
+            integrity laws, including, but not limited to, General Data Protection Regulations [EU] 2016/679 [“GDPR”] or
+            its equivalent, as amended from time to time.</p>
+        <button id="close-btn">Close</button>
+    </div>
+    <script>var closeBtn = document.getElementById("close-btn");
+closeBtn.addEventListener("click", function() {
+    parent.closePopup();
+});
 
 </script>
 <script src="/test.b1b66a44.js"></script></body>
