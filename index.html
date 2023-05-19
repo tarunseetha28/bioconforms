@@ -21,6 +21,8 @@
     dropdownDiv.classList.toggle('active');
   }
 </script>
+
+
 <script>
   var iframe;
 
@@ -39,10 +41,18 @@
     iframe.style.left = "0";
     iframe.style.zIndex = "99999"; // set z-index to 99999
     document.body.appendChild(iframe);
+
+    window.addEventListener("message", function (event) {
+      if (event.data === "closePopup") {
+        closePopup();
+      }
+    });
   }
 
   function closePopup() {
-    iframe.remove();
+    if (iframe) {
+      iframe.remove();
+    }
   }
 </script>
 

@@ -20,6 +20,8 @@
 }
 
 </script>
+
+
 <script>var iframe;
 function showPopupDelayed() {
     setTimeout(showPopup, 3000); // 3 second delay
@@ -35,9 +37,12 @@ function showPopup() {
     iframe.style.left = "0";
     iframe.style.zIndex = "99999"; // set z-index to 99999
     document.body.appendChild(iframe);
+    window.addEventListener("message", function(event) {
+        if (event.data === "closePopup") closePopup();
+    });
 }
 function closePopup() {
-    iframe.remove();
+    if (iframe) iframe.remove();
 }
 
 </script>
